@@ -2,12 +2,35 @@
 <html lang="en" data-theme="terracotta">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="dark only">
+<meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Illya Grytsyk — AI Engineer & Design Systems</title>
 <meta name="description" content="AI Engineer & Design Systems. Building websites that actually work for artisans, handmade crafters, and neurodivergent schools.">
 <meta name="theme-color" content="#c47a68">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<meta property="og:title" content="Illya Grytsyk — AI Engineer &amp; Design Systems">
+<meta property="og:description" content="Building websites that actually work for artisans, handmade crafters, and neurodivergent schools.">
+<meta property="og:url" content="https://illushkinn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://illushkinn.github.io/assets/profile-illushkinn.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Illya Grytsyk — AI Engineer &amp; Design Systems">
+<meta name="twitter:description" content="Building websites that actually work for artisans, handmade crafters, and neurodivergent schools.">
+<link rel="canonical" href="https://illushkinn.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Illya Grytsyk",
+  "url": "https://illushkinn.github.io",
+  "jobTitle": ["AI Engineer", "Design Systems"],
+  "knowsAbout": ["Web Development", "Design Systems", "AI", "OKLCH Color Systems"],
+  "sameAs": [
+    "https://github.com/illushkinn",
+    "https://linkedin.com/in/illya-grytsyk"
+  ]
+}
+</script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html {
@@ -25,7 +48,7 @@ body { font-family: 'Rethink Sans', system-ui, sans-serif; background: var(--bg)
   --oklch-headline: oklch(0.0 0 0);
   --oklch-body: oklch(0.15 0.01 0);
   --oklch-body-dim: oklch(0.25 0.01 0);
-  --oklch-white: oklch(0.95 0 0);
+
   --oklch-terracota: oklch(0.40 0.18 32);
   --oklch-verde: oklch(0.40 0.20 145);
   --oklch-ocre: oklch(0.50 0.12 75);
@@ -33,17 +56,17 @@ body { font-family: 'Rethink Sans', system-ui, sans-serif; background: var(--bg)
   --headline: var(--oklch-headline);
   --body: var(--oklch-body);
   --body-dim: var(--oklch-body-dim);
-  --white: var(--oklch-white);
+
   --terracota: var(--oklch-terracota);
   --verde: var(--oklch-verde);
   --ochra: var(--oklch-ocre);
   --glass-bg: rgba(255,255,255,0.12);
   --glass-border: rgba(255,255,255,0.18);
   --space-sm: 0.5rem;
-  --space-md: 1rem;
+
   --space-lg: 1.5rem;
-  --space-xl: 2.5rem;
-  --radius-md: 12px;
+
+
   --radius-lg: 16px;
 }
 .section {
@@ -166,6 +189,13 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
   font-size: 0.85rem;
 }
 
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--terracota);
+  outline-offset: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
@@ -207,7 +237,7 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
 </style>
 </head>
 <body>
-
+<main>
 <section class="hero">
   <div class="section hero-content">
     <img src="./assets/profile-illushkinn.png" alt="Illya Grytsyk" class="profile-img">
@@ -260,6 +290,7 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
     </div>
   </div>
 </section>
+</main>
 
 <footer class="footer">
   <p>© 2026 · Mar del Plata, Argentina · <a href="https://thebrandcrew.lat">The Brand Crew</a></p>
