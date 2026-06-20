@@ -24,11 +24,11 @@ body { font-family: 'Rethink Sans', system-ui, sans-serif; background: var(--bg)
   --oklch-bg: oklch(0.75 0.10 38);
   --oklch-headline: oklch(0.0 0 0);
   --oklch-body: oklch(0.15 0.01 0);
-  --oklch-body-dim: oklch(0.35 0.01 0);
+  --oklch-body-dim: oklch(0.25 0.01 0);
   --oklch-white: oklch(0.95 0 0);
-  --oklch-terracota: oklch(0.58 0.18 32);
-  --oklch-verde: oklch(0.82 0.2 125);
-  --oklch-ocre: oklch(0.72 0.12 75);
+  --oklch-terracota: oklch(0.40 0.18 32);
+  --oklch-verde: oklch(0.40 0.20 145);
+  --oklch-ocre: oklch(0.50 0.12 75);
   --bg: var(--oklch-bg);
   --headline: var(--oklch-headline);
   --body: var(--oklch-body);
@@ -177,6 +177,18 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
   color: var(--terracota);
   text-decoration: none;
 }
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+}
+.footer .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
@@ -246,6 +258,10 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
 
 <footer class="footer">
   <p>© 2026 · Mar del Plata, Argentina · <a href="https://thebrandcrew.lat">The Brand Crew</a></p>
+  <div class="footer-links">
+    <a href="https://github.com/illushkinn" target="_blank" rel="noopener">GitHub →</a>
+    <a href="https://linkedin.com/in/illya-grytsyk" target="_blank" rel="noopener">LinkedIn →</a>
+  </div>
 </footer>
 
 </body>
