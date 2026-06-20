@@ -193,6 +193,41 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Scroll to top */
+.scroll-to-top {
+  position: fixed;
+  bottom: calc(2px + env(safe-area-inset-bottom, 0px));
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  z-index: 900;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  color: var(--terracota);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s;
+  pointer-events: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.scroll-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.scroll-to-top:hover {
+  opacity: 0.6;
+}
+.scroll-to-top svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  pointer-events: none;
+}
 </style>
 </head>
 <body>
@@ -263,6 +298,14 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
     <a href="https://linkedin.com/in/illya-grytsyk" target="_blank" rel="noopener">LinkedIn →</a>
   </div>
 </footer>
+
+<div class="scroll-to-top" id="scrollToTop" role="button" tabindex="0" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" onkeydown="if(event.key==='Enter'||event.key===' '){window.scrollTo({top:0,behavior:'smooth'});event.preventDefault();}">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</div>
+
+<script>(function(){var s=document.getElementById('scrollToTop');var v=false;var l=0;function h(){var y=window.scrollY||window.pageYOffset;if(y>450&&!v){v=true;s.classList.add('is-visible')}else if(y<300&&v){v=false;s.classList.remove('is-visible')}l=y}var t=false;window.addEventListener('scroll',function(){if(!t){window.requestAnimationFrame(function(){h();t=false});t=true}});h()})();</script>
 
 </body>
 </html>
