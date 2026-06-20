@@ -139,30 +139,6 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
   margin-bottom: var(--space-sm);
 }
 
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 4rem clamp(1.25rem, 5vw, 4rem);
-}
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 2.5rem;
-  border-radius: 0;
-  border: 2px solid var(--white);
-  background: transparent;
-  color: var(--white);
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-}
-.btn:hover {
-  background: var(--white);
-  color: var(--headline);
-}
-
 /* Footer */
 .footer {
   text-align: center;
@@ -244,8 +220,7 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
     <p class="hero-sub">
       For artisans, handmade crafters, and schools that <span class="text-verde">deserve better than a template</span>.
     </p>
-    <a href="https://wa.me/5491124063009?text=Hey%20Illya!%20I%20saw%20your%20site%20and%20I'd%20love%20to%20talk." target="_blank" rel="noopener" class="btn">Let's talk →</a>
-  </div>
+    </div>
 </section>
 
 <section class="section">
@@ -286,11 +261,6 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
   </div>
 </section>
 
-<section class="cta">
-  <h2 style="margin-bottom:1.5rem;">Let's build something<br><span class="text-terracota">that matters</span>.</h2>
-  <a href="https://wa.me/5491124063009?text=Hey%20Illya!%20I%20saw%20your%20site%20and%20I'd%20love%20to%20talk." target="_blank" rel="noopener" class="btn">Start a conversation →</a>
-</section>
-
 <footer class="footer">
   <p>© 2026 · Mar del Plata, Argentina · <a href="https://thebrandcrew.lat">The Brand Crew</a></p>
   <div class="footer-links">
@@ -305,7 +275,7 @@ p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
   </svg>
 </div>
 
-<script>(function(){var s=document.getElementById('scrollToTop');var v=false;var l=0;function h(){var y=window.scrollY||window.pageYOffset;if(y>450&&!v){v=true;s.classList.add('is-visible')}else if(y<300&&v){v=false;s.classList.remove('is-visible')}l=y}var t=false;window.addEventListener('scroll',function(){if(!t){window.requestAnimationFrame(function(){h();t=false});t=true}});h()})();</script>
+<script>(function(){var s=document.getElementById('scrollToTop');var v=false;function h(){var y=window.scrollY||window.pageYOffset;var nearBottom=document.documentElement.scrollHeight-window.innerHeight-100;if(y>nearBottom&&!v){v=true;s.classList.add('is-visible')}else if(y<nearBottom-200&&v){v=false;s.classList.remove('is-visible')}}var t=false;window.addEventListener('scroll',function(){if(!t){window.requestAnimationFrame(function(){h();t=false});t=true}});h()})();</script>
 
 </body>
 </html>
