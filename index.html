@@ -1,305 +1,385 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="terracotta">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light only">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Illya Grytsyk — AI Engineer & Design Systems</title>
-<meta name="description" content="AI Engineer & Design Systems. Building websites that actually work for artisans, handmade crafters, and neurodivergent schools.">
-<meta name="theme-color" content="#c47a68">
-<meta property="og:title" content="Illya Grytsyk — AI Engineer &amp; Design Systems">
-<meta property="og:description" content="Building websites that actually work for artisans, handmade crafters, and neurodivergent schools.">
+<meta name="color-scheme" content="dark only">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illya Grytsyk — AI Engineer · Accessibility · Growth Partner</title>
+<meta name="description" content="Digital accessibility, UX optimization, and AI-powered solutions for government and public administration. Argentina + LATAM.">
+<meta name="theme-color" content="#0A0A0A">
+<meta property="og:title" content="Illya Grytsyk — AI Engineer · Accessibility · Growth Partner">
+<meta property="og:description" content="Digital accessibility, UX optimization, and AI-powered solutions for government and public administration.">
 <meta property="og:url" content="https://illushkinn.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://illushkinn.github.io/assets/profile-illushkinn.png">
-<meta property="fb:app_id" content="YOUR_APP_ID">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Illya Grytsyk — AI Engineer &amp; Design Systems">
-<meta name="twitter:description" content="Building websites that actually work for artisans, handmade crafters, and neurodivergent schools.">
+<meta name="twitter:title" content="Illya Grytsyk — AI Engineer · Accessibility · Growth Partner">
+<meta name="twitter:description" content="Digital accessibility, UX optimization, and AI-powered solutions for government and public administration.">
 <link rel="canonical" href="https://illushkinn.github.io/">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3Cstyle%3E@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&amp;display=swap');%3C/style%3E%3C/defs%3E%3Ctext x='16' y='26' text-anchor='middle' font-family=''Grand+Hotel', cursive' font-size='32' fill='%23c47a68'%3EI%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Illya Grytsyk",
-  "url": "https://illushkinn.github.io",
-  "jobTitle": ["AI Engineer", "Design Systems"],
-  "knowsAbout": ["Web Development", "Design Systems", "AI", "OKLCH Color Systems"],
-  "sameAs": [
-    "https://github.com/illushkinn",
-    "https://linkedin.com/in/illya-grytsyk"
-  ]
-}
-</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231AB4A4'/%3E%3Ctext x='16' y='24' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='22' fill='%23fff'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 64px;
-  background: var(--bg);
-  overflow-x: hidden;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-gutter: stable;
+  background: #0A0A0A;
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-body { font-family: 'Rethink Sans', system-ui, sans-serif; background: var(--bg); }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #0A0A0A;
+  color: #F9F9F9;
+  line-height: 1.6;
+}
+
 :root {
-  --oklch-bg: oklch(0.75 0.10 38);
-  --oklch-headline: oklch(0.0 0 0);
-  --oklch-body: oklch(0.15 0.01 0);
-  --oklch-body-dim: oklch(0.25 0.01 0);
-
-  --oklch-terracota: oklch(0.40 0.18 32);
-  --oklch-verde: oklch(0.40 0.20 145);
-  --oklch-ocre: oklch(0.50 0.12 75);
-  --bg: var(--oklch-bg);
-  --headline: var(--oklch-headline);
-  --body: var(--oklch-body);
-  --body-dim: var(--oklch-body-dim);
-
-  --terracota: var(--oklch-terracota);
-  --verde: var(--oklch-verde);
-  --ochra: var(--oklch-ocre);
-  --glass-bg: rgba(255,255,255,0.12);
-  --glass-border: rgba(255,255,255,0.18);
-  --space-sm: 0.5rem;
-
-  --space-lg: 1.5rem;
-
-
-  --radius-lg: 16px;
+  --bg: #0A0A0A;
+  --bg-elevated: #111113;
+  --headline: #F9F9F9;
+  --body: #D4D4D8;
+  --body-dim: #9B9DA0;
+  --accent: #1AB4A4;
+  --accent-hover: #27D4D8;
+  --accent-dim: #42C0BA;
+  --accent-deep: #195656;
+  --glass-bg: rgba(255,255,255,0.04);
+  --glass-border: rgba(255,255,255,0.08);
 }
+
+/* ===== LAYOUT ===== */
 .section {
-  padding: 2.5rem clamp(1.25rem, 5vw, 4rem);
-  max-width: 960px;
+  padding: 5rem clamp(1.5rem, 5vw, 3rem);
+  max-width: 1040px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
-  .section { padding: 4rem clamp(1.25rem, 5vw, 4rem); }
+@media (max-width: 640px) {
+  .section { padding: 3rem 1.25rem; }
 }
+
+/* ===== TYPOGRAPHY ===== */
 h1, h2, h3 { font-weight: 600; line-height: 1.1; letter-spacing: -0.03em; color: var(--headline); }
-h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
-h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: var(--space-lg); }
-p { color: var(--body); line-height: 1.6; text-wrap: pretty; }
-.text-terracota { color: var(--terracota); }
-.text-verde { color: var(--verde); }
-.text-ochra { color: var(--ochra); }
+h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 1.5rem; }
+h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
+.mono { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.text-accent { color: var(--accent); }
+.text-dim { color: var(--body-dim); }
+
+/* ===== CARDS ===== */
 .glass-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  padding: 1.75rem;
+  transition: border-color 0.3s, transform 0.2s;
+}
+.glass-card:hover {
+  border-color: rgba(26,180,164,0.25);
+  transform: translateY(-2px);
 }
 
-/* Hero */
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, opacity 0.2s;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #0A0A0A;
+}
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--headline);
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ===== NAV ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1.5rem, 5vw, 3rem);
+  background: rgba(10,10,10,0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.nav-brand {
+  font-weight: 600;
+  color: var(--headline);
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-brand span { color: var(--accent); }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--body-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* ===== HERO ===== */
 .hero {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+  padding-top: 5rem;
 }
 .hero-content {
-  position: relative;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--space-lg);
+  gap: 1.5rem;
+  max-width: 720px;
 }
 .hero-tags {
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 0.5rem;
 }
 .hero-tags span {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0.3rem 0.75rem;
-  border-radius: 100px;
-  border: 1px solid var(--terracota);
-  color: var(--headline);
+  border: 1px solid rgba(26,180,164,0.3);
+  color: var(--accent);
+}
+.hero h1 .highlight {
+  display: block;
+  color: var(--accent);
+  margin-top: 0.15em;
 }
 .hero-sub {
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  color: var(--body);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--body-dim);
   max-width: 600px;
+  line-height: 1.6;
 }
-.profile-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 3px solid var(--terracota);
-  object-fit: cover;
-  background: #fff;
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
-/* Grid */
+/* ===== PROFILE ===== */
+.profile-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+.profile-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 0;
+  object-fit: cover;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+.profile-meta h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.profile-meta p {
+  font-size: 0.85rem;
+  color: var(--body-dim);
+}
+
+/* ===== GRID ===== */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-lg);
+  gap: 1rem;
 }
 @media (min-width: 640px) {
   .grid-2 { grid-template-columns: 1fr 1fr; }
 }
-.niche-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: var(--space-sm);
-}
-.niche-card p {
-  font-size: 0.95rem;
-  color: var(--body-dim);
-}
-.niche-card .niche-icon {
-  font-size: 2rem;
-  margin-bottom: var(--space-sm);
-}
-@media (min-width: 768px) {
-  .niches-grid { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 900px) {
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem;
-  border-top: none;
-}
-.footer p {
-  color: var(--body-dim);
-  font-size: 0.85rem;
-}
-.footer a {
-  color: var(--terracota);
-  text-decoration: none;
-}
-.footer .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 0.75rem;
-}
-.footer .footer-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.85rem;
+/* ===== SECTION LABEL ===== */
+.section-label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
 }
 
-button:focus-visible,
-a:focus-visible,
-[tabindex]:focus-visible {
-  outline: 2px solid var(--terracota);
+/* ===== FOCUS ===== */
+a:focus-visible, button:focus-visible {
+  outline: 1.5px solid var(--accent);
   outline-offset: 2px;
 }
 
+/* ===== FOOTER ===== */
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 2.5rem clamp(1.5rem, 5vw, 3rem);
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer p { font-size: 0.85rem; color: var(--body-dim); }
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-links a {
+  color: var(--body-dim);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.footer-links a:hover { color: var(--accent); }
+
+/* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
-/* Scroll to top */
-.scroll-to-top {
-  position: fixed;
-  bottom: calc(2px + env(safe-area-inset-bottom, 0px));
-  right: calc(20px + env(safe-area-inset-right, 0px));
-  z-index: 900;
-  width: 44px;
-  height: 44px;
-  background: transparent;
-  border: none;
-  color: var(--terracota);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s, transform 0.4s;
-  pointer-events: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.scroll-to-top.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: all;
-}
-.scroll-to-top:hover {
-  opacity: 0.6;
-}
-.scroll-to-top svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  pointer-events: none;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hero-tags span { font-size: 0.65rem; padding: 0.25rem 0.6rem; }
 }
 </style>
 </head>
 <body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a href="#" class="nav-brand">Illya<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 <main>
-<section class="hero">
-  <div class="section hero-content">
-    <img src="./assets/profile-illushkinn.png" alt="Illya Grytsyk" class="profile-img">
-    <div class="hero-tags">
-      <span>AI Engineer</span>
-      <span>Design Systems</span>
-      <span>Growth Partner</span>
+  <section class="section hero">
+    <div class="hero-content">
+      <div class="hero-tags">
+        <span>AI Engineer</span>
+        <span>Accessibility</span>
+        <span>Growth Partner</span>
+      </div>
+      <h1>Digital accessibility<br>isn't compliance.<span class="highlight">It's strategy.</span></h1>
+      <p class="hero-sub">
+        I help governments and public administration turn inaccessible, exclusionary digital services into tools that actually work for everyone. AI-powered audits, WCAG compliance, and UX that doesn't bore the user into leaving.
+      </p>
+      <div class="profile-wrap">
+        <img src="./assets/profile-illushkinn.png" alt="Illya Grytsyk" class="profile-img" loading="lazy">
+        <div class="profile-meta">
+          <h3>Illya Grytsyk</h3>
+          <p>Mar del Plata, Argentina · 4 languages</p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="mailto:illya@thebrandcrew.lat" class="btn btn-primary">Start a conversation</a>
+        <a href="#work" class="btn btn-outline">See my work</a>
+      </div>
     </div>
-    <h1>I build websites<br>that <span class="text-terracota">actually work</span>.</h1>
-    <p class="hero-sub">
-      For artisans, handmade crafters, and schools that <span class="text-verde">deserve better than a template</span>.
+  </section>
+
+  <section class="section" id="work">
+    <span class="section-label mono text-dim">Focus Areas</span>
+    <h2>Where I <span class="text-accent">operate</span>.</h2>
+    <div class="grid-2">
+      <div class="glass-card">
+        <h3>🏛️ Government & Public Admin</h3>
+        <p>WCAG compliance audits, UX diagnostics, and end-to-end remediation for national and municipal digital services. Argentina first, LATAM next.</p>
+      </div>
+      <div class="glass-card">
+        <h3>♿ Digital Accessibility</h3>
+        <p>Beyond checkbox compliance. Real accessibility that works for neurodivergent users, visual impairments, and cognitive disabilities. AI-accelerated audits.</p>
+      </div>
+      <div class="glass-card">
+        <h3>🤖 AI Automation</h3>
+        <p>Internal process optimization with n8n, Python, and custom AI agents. From CRM workflows to automated accessibility reporting.</p>
+      </div>
+      <div class="glass-card">
+        <h3>📈 Growth Partner</h3>
+        <p>Disruptive communication strategies inspired by Velocity Media. Digital presence that converts — for institutions that need to reach people, not just inform them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="approach">
+    <span class="section-label mono text-dim">How I Build</span>
+    <h2><span class="text-accent">Spec-driven</span>, human-centered.</h2>
+    <div class="grid-2">
+      <div class="glass-card">
+        <h3>🧱 OKLCH Design Systems</h3>
+        <p>3-layer color architecture. Perceptually uniform, accessible by default. One base change updates the entire palette — no more guessing.</p>
+      </div>
+      <div class="glass-card">
+        <h3>📐 Spec-Driven Development</h3>
+        <p>Every project follows 6 stages: explore, propose, spec, design, tasks, test. Tests before code. Nothing is guesswork.</p>
+      </div>
+      <div class="glass-card">
+        <h3>⚡ CSS-First, AI-Assisted</h3>
+        <p>If CSS can solve it, no library needed. AI accelerates audits, generates alt text, suggests ARIA fixes — but the architecture is human-led.</p>
+      </div>
+      <div class="glass-card">
+        <h3>🌎 4 Languages, Global Reach</h3>
+        <p>Ukrainian, Russian, Spanish, English. I don't just translate — I adapt the message to the culture. Global strategy with local execution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <span class="section-label mono text-dim">Let's Talk</span>
+    <h2>Got a project? <span class="text-accent">Let's build it</span>.</h2>
+    <p style="max-width: 520px; margin-bottom: 1.5rem;">
+      Whether it's a government accessibility audit, an AI automation workflow, or a complete digital presence strategy — I'm available for consulting and partnerships across LATAM.
     </p>
+    <div class="hero-actions">
+      <a href="mailto:illya@thebrandcrew.lat" class="btn btn-primary">Email me</a>
+      <a href="https://wa.me/5491124063009" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+      <a href="https://github.com/illushkinn" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
     </div>
-</section>
-
-<section class="section">
-  <h2>I focus on <span class="text-ochra">niches that matter</span>.</h2>
-  <div class="grid-2 niches-grid">
-    <div class="glass-card niche-card">
-      <div class="niche-icon">🧵</div>
-      <h3>Artisans &amp; Handmade</h3>
-      <p>Your workshop deserves more than an Instagram feed. A real website that tells your story and sells your craft, without depending on algorithms.</p>
-    </div>
-    <div class="glass-card niche-card">
-      <div class="niche-icon">🧠</div>
-      <h3>Neurodivergent Schools</h3>
-      <p>Clear navigation, high contrast, easy reading. A website that doesn't demand more than they can give. Real accessibility, not checkbox compliance.</p>
-    </div>
-    <div class="glass-card niche-card">
-      <div class="niche-icon">🍽️</div>
-      <h3>Digital Hubs</h3>
-      <p>Online menus, catalogs, and service pages for restaurants, rotiserías, and local businesses. A digital storefront that brings customers in without the app fatigue.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <h2>How I <span class="text-terracota">build</span>.</h2>
-  <div class="grid-2">
-    <div class="glass-card">
-      <h3 style="font-size:1.2rem; margin-bottom:0.5rem;">🧱 OKLCH 3-Layer</h3>
-      <p>Colors organized in three levels. Change one base, and the whole palette adjusts. Perceptually uniform — looks right on any screen.</p>
-    </div>
-    <div class="glass-card">
-      <h3 style="font-size:1.2rem; margin-bottom:0.5rem;">⚡ CSS-First</h3>
-      <p>If CSS can solve it, no library needed. Faster load times, easier maintenance, less that can break.</p>
-    </div>
-    <div class="glass-card">
-      <h3 style="font-size:1.2rem; margin-bottom:0.5rem;">📐 Spec-Driven Dev</h3>
-      <p>Every project goes through 6 stages: explore, propose, spec, design, tasks, test. Tests before code. Never a guessing game.</p>
-    </div>
-    <div class="glass-card">
-      <h3 style="font-size:1.2rem; margin-bottom:0.5rem;">📱 Mobile-First</h3>
-      <p>Most of your clients will see you from their phone first. That's where I start, then expand to tablet and desktop.</p>
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <footer class="footer">
@@ -307,16 +387,9 @@ a:focus-visible,
   <div class="footer-links">
     <a href="https://github.com/illushkinn" target="_blank" rel="noopener">GitHub →</a>
     <a href="https://linkedin.com/in/illya-grytsyk" target="_blank" rel="noopener">LinkedIn →</a>
+    <a href="https://thebrandcrew.lat" target="_blank" rel="noopener">The Brand Crew →</a>
   </div>
 </footer>
-
-<div class="scroll-to-top" id="scrollToTop" role="button" tabindex="0" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" onkeydown="if(event.key==='Enter'||event.key===' '){window.scrollTo({top:0,behavior:'smooth'});event.preventDefault();}">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 19V5M5 12l7-7 7 7"/>
-  </svg>
-</div>
-
-<script>(function(){var s=document.getElementById('scrollToTop');var v=false;function h(){var y=window.scrollY||window.pageYOffset;var nearBottom=document.documentElement.scrollHeight-window.innerHeight-100;if(y>nearBottom&&!v){v=true;s.classList.add('is-visible')}else if(y<nearBottom-200&&v){v=false;s.classList.remove('is-visible')}}var t=false;window.addEventListener('scroll',function(){if(!t){window.requestAnimationFrame(function(){h();t=false});t=true}});h()})();</script>
 
 </body>
 </html>
