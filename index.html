@@ -31,7 +31,6 @@ html {
 }
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: #0A0A0A;
   color: #F9F9F9;
   line-height: 1.6;
 }
@@ -250,6 +249,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   height: 100%;
   z-index: -1;
   pointer-events: none;
+  background: #0A0A0A;
 }
 
 /* ===== FOCUS ===== */
@@ -415,14 +415,14 @@ tsParticles.load({
       links: { enable: false },
       move: {
         enable: true,
-        speed: 0.4,
+        speed: 0.5,
         direction: "none",
         random: true,
         outModes: "out"
       },
-      number: { value: 25, density: { enable: true } },
-      opacity: { value: 0.12, random: true },
-      size: { value: { min: 1, max: 2.5 }, random: true }
+      number: { value: 35, density: { enable: true } },
+      opacity: { value: 0.25, random: true },
+      size: { value: { min: 1.5, max: 3.5 }, random: true }
     },
     detectRetina: true,
     fullScreen: { enable: false, zIndex: -1 }
