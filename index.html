@@ -241,16 +241,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 }
 
 /* ===== PARTICLES ===== */
-#tsparticles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-  background: #0A0A0A;
-}
+/* tsParticles renders its own fullscreen canvas — no container CSS needed */
 
 /* ===== FOCUS ===== */
 a:focus-visible, button:focus-visible {
@@ -408,7 +399,7 @@ a:focus-visible, button:focus-visible {
 tsParticles.load({
   id: "tsparticles",
   options: {
-    background: { color: { value: "transparent" } },
+    background: { color: { value: "#0A0A0A" } },
     fpsLimit: 60,
     particles: {
       color: { value: "#1AB4A4" },
@@ -425,7 +416,7 @@ tsParticles.load({
       size: { value: { min: 1.5, max: 3.5 }, random: true }
     },
     detectRetina: true,
-    fullScreen: { enable: false, zIndex: -1 }
+    fullScreen: { enable: true, zIndex: -1 }
   }
 });
 
