@@ -225,6 +225,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   max-width: 720px;
   width: 100%;
   min-width: 0;
+  position: relative;
 }
 .hero-tags {
   display: flex;
@@ -318,6 +319,25 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .hero-tags span { font-size: 0.65rem; padding: 0.25rem 0.6rem; }
+  .hero-brutalist {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: -0.5rem;
+    font-size: clamp(4rem, 15vw, 6rem);
+    font-weight: 900;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: rgba(26, 180, 164, 0.06);
+    text-transform: uppercase;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 0;
+    user-select: none;
+  }
+}
+@media (min-width: 641px) {
+  .hero-brutalist { display: none; }
 }
 </style>
 </head>
@@ -342,6 +362,7 @@ a:focus-visible, button:focus-visible {
         <span id="tag-2">Accessibility</span>
         <span id="tag-3">Growth Partner</span>
       </div>
+      <div class="hero-brutalist" aria-hidden="true">DIGITAL<br>ACCESSIBILITY</div>
       <h1 id="hero-title">Digital accessibility<br>isn't just compliance.<span class="highlight">It's strategy.</span></h1>
       <p class="hero-sub" id="hero-sub">
         Government digital services that actually work. AI-powered audits, WCAG compliance, and UX people don't hate.
