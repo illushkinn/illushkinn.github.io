@@ -320,13 +320,31 @@ a:focus-visible, button:focus-visible {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
   .nav-links { display: none; }
-  .hero-tags span { font-size: 0.65rem; padding: 0.25rem 0.6rem; }
+  .hero {
+    padding-top: 4rem;
+  }
+  .hero-content {
+    gap: 1rem;
+  }
+  .hero-tags span { font-size: 0.6rem; padding: 0.2rem 0.5rem; }
   .hero h1 {
-    font-size: clamp(2.6rem, 8vw, 3.5rem);
+    font-size: clamp(2.4rem, 7.5vw, 3.2rem);
   }
   .hero h1 .highlight {
-    font-size: 0.8em;
-    margin-top: 0.1em;
+    font-size: 0.85em;
+    margin-top: 0.05em;
+  }
+  .hero-sub {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.4;
+  }
+  .hero-actions {
+    gap: 0.5rem;
+    margin-top: 0;
+  }
+  .hero-actions .btn {
+    font-size: 0.85rem;
+    padding: 0.55rem 1rem;
   }
 }
 @media (min-width: 641px) {
