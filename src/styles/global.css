@@ -54,7 +54,7 @@ body::before {
   --accent: oklch(0.82 0.2 125);
   --accent-hover: oklch(0.72 0.18 125);
   --accent-muted: oklch(0.65 0.12 125);
-  /* Secondary: cyan as technical accent */
+  /* Secondary: keep cyan as technical accent */
   --cyan: #1AB4A4;
   --cyan-hover: #27D4D8;
   --cyan-deep: #195656;
@@ -66,12 +66,12 @@ body::before {
    📐 TEMPLATES — Layout
    ======================================== */
 .section {
-  padding: 3rem 1.25rem;
+  padding: 5rem clamp(1.5rem, 5vw, 3rem);
   max-width: 1040px;
   margin: 0 auto;
 }
-@media (min-width: 641px) {
-  .section { padding: 5rem clamp(1.5rem, 5vw, 3rem); }
+@media (max-width: 640px) {
+  .section { padding: 3rem 1.25rem; }
 }
 
 /* ========================================
@@ -87,16 +87,32 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 .text-dim { color: var(--body-dim); }
 
 /* ========================================
+   🔬 MOLECULES — Glass Card
+   ======================================== */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 1.75rem;
+  transition: border-color 0.3s, transform 0.2s;
+}
+.glass-card:hover {
+  border-color: oklch(from var(--accent) l c h / 0.25);
+  transform: translateY(-2px);
+}
+
+.card-icon { display: block; margin-bottom: 0.75rem; }
+
+/* ========================================
    🔬 MOLECULES — Buttons
    ======================================== */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.85rem 1.75rem;
   font-family: 'Inter', system-ui, sans-serif;
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -108,8 +124,15 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   color: #0A0A0A;
 }
 .btn-primary:hover { background: var(--accent-hover); }
-@media (min-width: 641px) {
-  .btn { padding: 0.85rem 1.75rem; font-size: 0.9rem; }
+.btn-outline {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.2);
+  color: var(--headline);
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 /* ========================================
@@ -124,23 +147,24 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.875rem 1.25rem;
+  padding: 1rem clamp(1.5rem, 5vw, 3rem);
   background: rgba(10,10,10,0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-@media (min-width: 641px) {
-  .nav { padding: 1rem clamp(1.5rem, 5vw, 3rem); }
+.nav-brand {
+  font-weight: 600;
+  color: var(--headline);
+  text-decoration: none;
+  font-size: 1rem;
 }
+.nav-brand span { color: var(--accent); }
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
   align-items: center;
-}
-@media (min-width: 641px) {
-  .nav-links { gap: 2rem; }
 }
 .nav-links a {
   color: var(--body-dim);
@@ -203,22 +227,16 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 4rem;
-}
-@media (min-width: 641px) {
-  .hero { padding-top: 5rem; }
+  padding-top: 5rem;
 }
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 720px;
   width: 100%;
   min-width: 0;
   position: relative;
-}
-@media (min-width: 641px) {
-  .hero-content { gap: 1.5rem; }
 }
 .hero-tags {
   display: flex;
@@ -227,15 +245,12 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 }
 .hero-tags span {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  padding: 0.2rem 0.5rem;
+  padding: 0.25rem 0.6rem;
   border: 1px solid oklch(from var(--accent) l c h / 0.3);
   color: var(--accent);
-}
-@media (min-width: 641px) {
-  .hero-tags span { font-size: 0.6rem; padding: 0.25rem 0.6rem; }
 }
 .hero h1 .highlight {
   display: block;
@@ -243,20 +258,29 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   margin-top: 0.15em;
 }
 .hero-sub {
-  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--body-dim);
   max-width: 600px;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-wrap: break-word;
 }
-@media (min-width: 641px) {
-  .hero-sub { line-height: 1.6; }
-}
 .hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
   margin-top: 0.5rem;
 }
-@media (min-width: 641px) {
-  .hero-actions { margin-top: 0.5rem; }
+
+/* ========================================
+   🔬 MOLECULES — Grid
+   ======================================== */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }
 }
 
 /* ========================================
@@ -280,30 +304,19 @@ a:focus-visible, button:focus-visible {
    ======================================== */
 .footer {
   border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 2rem 1.25rem;
+  padding: 2.5rem clamp(1.5rem, 5vw, 3rem);
   max-width: 1040px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
-  text-align: center;
-}
-@media (min-width: 641px) {
-  .footer {
-    padding: 2.5rem clamp(1.5rem, 5vw, 3rem);
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
 }
 .footer p { font-size: 0.85rem; color: var(--body-dim); }
 .footer-links {
   display: flex;
-  gap: 1.25rem;
-}
-@media (min-width: 641px) {
-  .footer-links { gap: 1.5rem; }
+  gap: 1.5rem;
 }
 .footer-links a {
   color: var(--body-dim);
@@ -321,4 +334,39 @@ a:focus-visible, button:focus-visible {
    ======================================== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* ========================================
+   📐 TEMPLATES — Responsive
+   ======================================== */
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hero {
+    padding-top: 4rem;
+  }
+  .hero-content {
+    gap: 1rem;
+  }
+  .hero-tags span { font-size: 0.5rem; padding: 0.15rem 0.45rem; }
+  .hero h1 {
+    font-size: clamp(2.4rem, 7.5vw, 3.2rem);
+  }
+  .hero h1 .highlight {
+    font-size: 0.85em;
+    margin-top: 0.05em;
+  }
+  .hero-sub {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.4;
+  }
+  .hero-actions {
+    gap: 0.5rem;
+    margin-top: 0;
+  }
+  .hero-actions .btn {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.2rem;
+  }
+}
+@media (min-width: 641px) {
 }
