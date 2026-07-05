@@ -27,35 +27,44 @@ body::before {
   background-image:
     repeating-linear-gradient(
       0deg,
-      rgba(26, 180, 164, 0.035) 0px,
-      rgba(26, 180, 164, 0.035) 1px,
+      oklch(from var(--accent) l c h / 0.035) 0px,
+      oklch(from var(--accent) l c h / 0.035) 1px,
       transparent 1px,
       transparent 20px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(26, 180, 164, 0.035) 0px,
-      rgba(26, 180, 164, 0.035) 1px,
+      oklch(from var(--accent) l c h / 0.035) 0px,
+      oklch(from var(--accent) l c h / 0.035) 1px,
       transparent 1px,
       transparent 20px
     );
 }
 
+/* ========================================
+   🧬 ATOMS — Design Tokens
+   ======================================== */
 :root {
   --bg: #0A0A0A;
   --bg-elevated: #111113;
   --headline: #F9F9F9;
   --body: #D4D4D8;
   --body-dim: #9B9DA0;
-  --accent: #1AB4A4;
-  --accent-hover: #27D4D8;
-  --accent-dim: #42C0BA;
-  --accent-deep: #195656;
+  /* Primary: yellow-green (TBC palette) */
+  --accent: oklch(0.82 0.2 125);
+  --accent-hover: oklch(0.72 0.18 125);
+  --accent-muted: oklch(0.65 0.12 125);
+  /* Secondary: keep cyan as technical accent */
+  --cyan: #1AB4A4;
+  --cyan-hover: #27D4D8;
+  --cyan-deep: #195656;
   --glass-bg: rgba(255,255,255,0.04);
   --glass-border: rgba(255,255,255,0.08);
 }
 
-/* ===== LAYOUT ===== */
+/* ========================================
+   📐 TEMPLATES — Layout
+   ======================================== */
 .section {
   padding: 5rem clamp(1.5rem, 5vw, 3rem);
   max-width: 1040px;
@@ -65,7 +74,9 @@ body::before {
   .section { padding: 3rem 1.25rem; }
 }
 
-/* ===== TYPOGRAPHY ===== */
+/* ========================================
+   🧬 ATOMS — Typography & Utilities
+   ======================================== */
 h1, h2, h3 { font-weight: 600; line-height: 1.1; letter-spacing: -0.03em; color: var(--headline); }
 h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); }
 h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 1.5rem; }
@@ -75,7 +86,9 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 .text-accent { color: var(--accent); }
 .text-dim { color: var(--body-dim); }
 
-/* ===== CARDS ===== */
+/* ========================================
+   🔬 MOLECULES — Glass Card
+   ======================================== */
 .glass-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
@@ -83,13 +96,15 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   transition: border-color 0.3s, transform 0.2s;
 }
 .glass-card:hover {
-  border-color: rgba(26,180,164,0.25);
+  border-color: oklch(from var(--accent) l c h / 0.25);
   transform: translateY(-2px);
 }
 
 .card-icon { display: block; margin-bottom: 0.75rem; }
 
-/* ===== BUTTONS ===== */
+/* ========================================
+   🔬 MOLECULES — Buttons
+   ======================================== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -120,7 +135,9 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   color: var(--accent);
 }
 
-/* ===== NAV ===== */
+/* ========================================
+   🧠 ORGANISMS — Navigation
+   ======================================== */
 .nav {
   position: fixed;
   top: 0;
@@ -158,8 +175,8 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 }
 .nav-links a:hover { color: var(--accent); }
 
-/* ===== LANG TOGGLE ===== */
-.lang-btn {
+/* ===== Language Select ===== */
+.lang-select {
   background: none;
   border: 1px solid rgba(255,255,255,0.12);
   color: var(--body-dim);
@@ -167,15 +184,25 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 6px;
   transition: color 0.2s, border-color 0.2s, background 0.2s;
   line-height: 1.4;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' fill='none'%3E%3Cpath d='M1 1l3 3 3-3' stroke='%239B9DA0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.4rem center;
+  padding-right: 1.4rem;
 }
-.lang-btn:hover { color: var(--accent); border-color: var(--accent); background: rgba(26,180,164,0.08); }
-.lang-btn:focus-visible { outline: 1.5px solid var(--accent); outline-offset: 2px; }
+.lang-select:hover { color: var(--accent); border-color: var(--accent); background-color: oklch(from var(--accent) l c h / 0.08); }
+.lang-select:focus-visible { outline: none; }
+.lang-select option { background: #1a1a1a; color: #F9F9F9; }
 
-/* ===== SKIP LINK ===== */
+/* ========================================
+   🧬 ATOMS — Skip Link
+   ======================================== */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -191,7 +218,9 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 }
 .skip-link:focus { top: 0.5rem; }
 
-/* ===== HERO ===== */
+/* ========================================
+   🧠 ORGANISMS — Hero
+   ======================================== */
 .hero {
   min-height: 100dvh;
   display: flex;
@@ -220,7 +249,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0.25rem 0.6rem;
-  border: 1px solid rgba(26,180,164,0.3);
+  border: 1px solid oklch(from var(--accent) l c h / 0.3);
   color: var(--accent);
 }
 .hero h1 .highlight {
@@ -242,7 +271,9 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   margin-top: 0.5rem;
 }
 
-/* ===== GRID ===== */
+/* ========================================
+   🔬 MOLECULES — Grid
+   ======================================== */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
@@ -252,19 +283,25 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   .grid-2 { grid-template-columns: 1fr 1fr; }
 }
 
-/* ===== SECTION LABEL ===== */
+/* ========================================
+   🧬 ATOMS — Section Label
+   ======================================== */
 .section-label {
   display: inline-block;
   margin-bottom: 0.75rem;
 }
 
-/* ===== FOCUS ===== */
+/* ========================================
+   🧬 ATOMS — Focus
+   ======================================== */
 a:focus-visible, button:focus-visible {
   outline: 1.5px solid var(--accent);
   outline-offset: 2px;
 }
 
-/* ===== FOOTER ===== */
+/* ========================================
+   🧠 ORGANISMS — Footer
+   ======================================== */
 .footer {
   border-top: 1px solid rgba(255,255,255,0.06);
   padding: 2.5rem clamp(1.5rem, 5vw, 3rem);
@@ -292,12 +329,16 @@ a:focus-visible, button:focus-visible {
 }
 .footer-links a:hover { color: var(--accent); }
 
-/* ===== REDUCED MOTION ===== */
+/* ========================================
+   🧬 ATOMS — Reduced Motion
+   ======================================== */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 
-/* ===== RESPONSIVE ===== */
+/* ========================================
+   📐 TEMPLATES — Responsive
+   ======================================== */
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .hero {

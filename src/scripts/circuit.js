@@ -5,7 +5,7 @@
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const GRID = 20;
-  const ACCENT = '26,180,164';
+  const ACCENT = '140,212,74';
   const TRAIL = 0.12;
   const COUNT = 20;
 
