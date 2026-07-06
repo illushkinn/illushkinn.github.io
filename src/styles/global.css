@@ -50,10 +50,10 @@ body::before {
   --headline: #F9F9F9;
   --body: #D4D4D8;
   --body-dim: #9B9DA0;
-  /* Primary: yellow-green (TBC palette) */
-  --accent: oklch(0.82 0.2 125);
-  --accent-hover: oklch(0.72 0.18 125);
-  --accent-muted: oklch(0.65 0.12 125);
+  /* Primary: ocre (golden warm) */
+  --accent: oklch(0.72 0.12 75);
+  --accent-hover: oklch(0.65 0.14 75);
+  --accent-muted: oklch(0.62 0.06 75);
   /* Secondary: keep cyan as technical accent */
   --cyan: #1AB4A4;
   --cyan-hover: #27D4D8;
