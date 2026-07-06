@@ -40,7 +40,8 @@ const i18n = {
     'lang-aria': 'Select language',
     'lang-en': 'English',
     'lang-es': 'Spanish',
-    'lang-ua': 'Ukrainian'
+    'lang-ua': 'Ukrainian',
+    'lang-announce': 'Language changed to English'
   },
   es: {
     'nav-work': 'Trabajos',
@@ -82,7 +83,8 @@ const i18n = {
     'lang-aria': 'Seleccionar idioma',
     'lang-en': 'Ingl\u00E9s',
     'lang-es': 'Espa\u00F1ol',
-    'lang-ua': 'Ucraniano'
+    'lang-ua': 'Ucraniano',
+    'lang-announce': 'Idioma cambiado a Espa\u00F1ol'
   },
   ua: {
     'nav-work': 'Роботи',
@@ -124,7 +126,8 @@ const i18n = {
     'lang-aria': 'Вибрати мову',
     'lang-en': 'Англійська',
     'lang-es': 'Іспанська',
-    'lang-ua': 'Українська'
+    'lang-ua': 'Українська',
+    'lang-announce': 'Мову змінено на Українську'
   },
   ru: {
     'nav-work': 'Проекты',
@@ -167,7 +170,8 @@ const i18n = {
     'lang-en': 'Английский',
     'lang-es': 'Испанский',
     'lang-ua': 'Украинский',
-    'lang-ru': 'Русский'
+    'lang-ru': 'Русский',
+    'lang-announce': 'Язык изменён на Русский'
   }
 };
 
@@ -217,6 +221,12 @@ function applyLang(lang) {
   document.getElementById('footer-text').textContent = t['footer-text'];
   localStorage.setItem('lang', lang);
   currentLang = lang;
+
+  // Announce language change for screen readers
+  const announcer = document.getElementById('i18n-announce');
+  if (announcer) {
+    announcer.textContent = t['lang-announce'] || '';
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {

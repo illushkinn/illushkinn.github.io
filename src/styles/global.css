@@ -197,7 +197,10 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   padding-right: 1.4rem;
 }
 .lang-select:hover { color: var(--accent); border-color: var(--accent); background-color: oklch(from var(--accent) l c h / 0.08); }
-.lang-select:focus-visible { outline: none; }
+.lang-select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 .lang-select option { background: #1a1a1a; color: #F9F9F9; }
 
 /* ========================================
@@ -292,11 +295,57 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 }
 
 /* ========================================
+   🧬 ATOMS — Screen-Reader Only
+   ======================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ========================================
    🧬 ATOMS — Focus
    ======================================== */
 a:focus-visible, button:focus-visible {
   outline: 1.5px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* ========================================
+   🔬 MOLECULES — Hamburger
+   ======================================== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--body-dim);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* ========================================
@@ -340,7 +389,24 @@ a:focus-visible, button:focus-visible {
    📐 TEMPLATES — Responsive
    ======================================== */
 @media (max-width: 640px) {
-  .nav-links { display: none; }
+  .nav { justify-content: flex-end; }
+  .hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    background: rgba(10,10,10,0.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .nav-links.active { display: flex; }
   .hero {
     padding-top: 4rem;
   }
