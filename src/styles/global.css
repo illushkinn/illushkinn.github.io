@@ -507,18 +507,18 @@ a:focus-visible, button:focus-visible {
   }
   /* .nav-links.active removed — replaced by clip-path overlay */
   .hero {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     min-height: 100dvh;
   }
   .hero-content {
-    gap: 1rem;
+    gap: 1.25rem;
   }
   .hero-tags {
     gap: 0.4rem;
   }
-  .hero-tags span { font-size: 0.55rem; padding: 0.2rem 0.5rem; }
+  .hero-tags span { font-size: 0.6rem; padding: 0.25rem 0.55rem; }
   .hero h1 {
-    font-size: clamp(2.6rem, 8vw, 3.6rem);
+    font-size: clamp(3rem, 10vw, 3.8rem);
     line-height: 1.0;
     margin-bottom: 0.15rem;
   }
@@ -527,16 +527,16 @@ a:focus-visible, button:focus-visible {
     margin-top: 0.05em;
   }
   .hero-sub {
-    font-size: clamp(1.05rem, 3.5vw, 1.25rem);
+    font-size: clamp(1.15rem, 4vw, 1.3rem);
     line-height: 1.4;
   }
   .hero-actions {
     gap: 0.6rem;
-    margin-top: 0.15rem;
+    margin-top: 0.5rem;
   }
   .hero-actions .btn {
-    font-size: 0.9rem;
-    padding: 0.75rem 1.4rem;
+    font-size: 1rem;
+    padding: 0.85rem 1.6rem;
   }
   .glass-card h3 { font-size: 1.3rem; }
 }
