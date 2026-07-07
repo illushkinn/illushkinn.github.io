@@ -14,17 +14,15 @@ const i18n = {
     'section-work-label': 'Focus Areas',
     'section-work-title': 'Where we <span class="text-accent">deliver</span>.',
     'card-1-title': 'Government & Public Admin',
-    'card-1-desc': 'WCAG audits to full remediation. Argentina first, LATAM next.',
     'card-2-title': 'Digital Accessibility',
     'card-3-title': 'AI Automation',
     'card-4-title': 'Schools & Education',
     'card-4-desc': 'Accessible platforms for public and private schools. EdTech with inclusion built-in.',
     'section-approach-label': 'How We Build',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, UX-centered.',
-    'card-a1-title': 'Design That Includes Everyone',
-    'card-a1-desc': 'Your website or app works for every person, however they access it. Inclusion isn\'t extra — it\'s built in from day one.',
+    'card-a1-title': '<span class="text-white">It\'s strategic.</span><br><span class="text-accent">Digital accessibility isn\'t just compliance.</span>',
     'card-a2-title': 'First We Understand, Then We Build',
-    'card-a2-desc': 'No guessing. We define goals, design, test, and only then write code. Fewer surprises, better results.',
+    'card-a2-desc': 'No guessing. We define goals and requirements, design, test, and only then write code. Fewer surprises, better results.',
     'card-a3-title': 'The Right Tools for Your Project',
     'card-a3-desc': 'We don\'t use the newest tech just because. We choose what solves your real problem — without inflating costs.',
     'card-a4-title': 'Your Message Reaches Further',
@@ -35,10 +33,6 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Skip to main content',
     'nav-label': 'Main navigation',
-    'lang-aria': 'Select language',
-    'lang-en': 'English',
-    'lang-es': 'Spanish',
-    'lang-ua': 'Ukrainian',
     'lang-announce': 'Language changed to English'
   },
   es: {
@@ -57,15 +51,13 @@ const i18n = {
     'card-1-title': 'Gobierno y Sector P\u00FAblico',
     'card-2-title': 'Accesibilidad Digital',
     'card-3-title': 'Automatizaci\u00F3n con IA',
-    'card-3-desc': 'Agentes de IA para gobierno. De CRM a reportes de accesibilidad.',
     'card-4-title': 'Escuelas y Educación',
     'card-4-desc': 'Plataformas accesibles para escuelas públicas y privadas. EdTech con inclusión desde el vamos.',
     'section-approach-label': 'Cómo Construimos',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, centrado en UX.',
-    'card-a1-title': 'Diseño que incluye a todos',
-    'card-a1-desc': 'Tu web o app funciona para todas las personas, sin importar cómo accedan. La inclusión no es un extra: está desde el día uno.',
+    'card-a1-title': '<span class="text-white">Es estratégico.</span><br><span class="text-accent">Accesibilidad digital no es solo cumplimiento.</span>',
     'card-a2-title': 'Primero entendemos, después construimos',
-    'card-a2-desc': 'Nada de adivinar. Definimos objetivos, diseñamos, probamos, y recién ahí escribimos código. Menos sorpresas, mejores resultados.',
+    'card-a2-desc': 'Nada de adivinar. Definimos objetivos y requisitos, diseñamos, probamos, y recién ahí escribimos código. Menos sorpresas, mejores resultados.',
     'card-a3-title': 'Las herramientas justas para tu proyecto',
     'card-a3-desc': 'No usamos lo más nuevo porque sí. Elegimos lo que resuelve tu problema real, sin inflar costos ni complejidad.',
     'card-a4-title': 'Tu mensaje llega más lejos',
@@ -76,10 +68,6 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Saltar al contenido principal',
     'nav-label': 'Navegaci\u00F3n principal',
-    'lang-aria': 'Seleccionar idioma',
-    'lang-en': 'Ingl\u00E9s',
-    'lang-es': 'Espa\u00F1ol',
-    'lang-ua': 'Ucraniano',
     'lang-announce': 'Idioma cambiado a Espa\u00F1ol'
   },
   ua: {
@@ -96,19 +84,15 @@ const i18n = {
     'section-work-label': 'Напрямки',
     'section-work-title': 'Де <span class="text-accent">доставляємо</span>.',
     'card-1-title': 'Державний сектор',
-    'card-1-desc': 'WCAG аудити до повної ремедіації. Аргентина — LATAM.',
     'card-2-title': 'Цифрова доступність',
-    'card-2-desc': 'Для нейровідмінних користувачів. Прискорено ШІ. Створено, щоб включати.',
     'card-3-title': 'Автоматизація з ШІ',
-    'card-3-desc': 'Агенти ШІ для уряду. Від CRM до звітів доступності.',
     'card-4-title': 'Школи та Освіта',
     'card-4-desc': 'Доступні платформи для державних і приватних шкіл. EdTech з інклюзією з самого початку.',
     'section-approach-label': 'Як ми будуємо',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, орієнтовано на UX.',
-    'card-a1-title': 'Дизайн, який включає всіх',
-    'card-a1-desc': 'Ваш сайт чи додаток працює для кожної людини, незалежно від того, як вона отримує доступ. Інклюзія не є додатковою опцією — вона вбудована з першого дня.',
+    'card-a1-title': '<span class="text-white">Це стратегічно.</span><br><span class="text-accent">Цифрова доступність — це не просто відповідність.</span>',
     'card-a2-title': 'Спочатку розуміємо, потім будуємо',
-    'card-a2-desc': 'Жодних здогадок. Визначаємо цілі, проектуємо, тестуємо, і тільки тоді пишемо код. Менше сюрпризів, кращі результати.',
+    'card-a2-desc': 'Жодних здогадок. Визначаємо цілі та вимоги, проектуємо, тестуємо, і тільки тоді пишемо код. Менше сюрпризів, кращі результати.',
     'card-a3-title': 'Правильні інструменти для вашого проекту',
     'card-a3-desc': 'Ми не використовуємо найновіші технології просто тому. Ми обираємо те, що вирішує вашу реальну проблему — без завищення витрат.',
     'card-a4-title': 'Ваше повідомлення сягає далі',
@@ -119,10 +103,6 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Ілля Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти до основного вмісту',
     'nav-label': 'Головна навігація',
-    'lang-aria': 'Вибрати мову',
-    'lang-en': 'Англійська',
-    'lang-es': 'Іспанська',
-    'lang-ua': 'Українська',
     'lang-announce': 'Мову змінено на Українську'
   },
   ru: {
@@ -139,19 +119,15 @@ const i18n = {
     'section-work-label': 'Направления',
     'section-work-title': 'Где <span class="text-accent">доставляем</span>.',
     'card-1-title': 'Госуправление и администрирование',
-    'card-1-desc': 'WCAG аудиты до полной ремедиации. Аргентина первая, LATAM дальше.',
     'card-2-title': 'Цифровая доступность',
-    'card-2-desc': 'Для нейроотличных пользователей. Ускорено ИИ. Создано, чтобы включать.',
     'card-3-title': 'Автоматизация с ИИ',
-    'card-3-desc': 'Агенты ИИ для государства. От CRM до отчетов доступности.',
     'card-4-title': 'Школы и Образование',
     'card-4-desc': 'Доступные платформы для государственных и частных школ. EdTech с инклюзией с самого начала.',
     'section-approach-label': 'Как мы строим',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, ориентировано на UX.',
-    'card-a1-title': 'Дизайн, который включает всех',
-    'card-a1-desc': 'Ваш сайт или приложение работает для каждого человека, независимо от того, как он получает доступ. Инклюзия не является дополнительной опцией — она встроена с первого дня.',
+    'card-a1-title': '<span class="text-white">Это стратегически.</span><br><span class="text-accent">Цифровая доступность — это не просто соответствие.</span>',
     'card-a2-title': 'Сначала понимаем, потом строим',
-    'card-a2-desc': 'Никаких догадок. Определяем цели, проектируем, тестируем, и только потом пишем код. Меньше сюрпризов, лучшие результаты.',
+    'card-a2-desc': 'Никаких догадок. Определяем цели и требования, проектируем, тестируем, и только потом пишем код. Меньше сюрпризов, лучшие результаты.',
     'card-a3-title': 'Правильные инструменты для вашего проекта',
     'card-a3-desc': 'Мы не используем новейшие технологии просто потому что. Мы выбираем то, что решает вашу реальную проблему — без завышения затрат.',
     'card-a4-title': 'Ваше сообщение достигает большего',
@@ -162,11 +138,6 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Илья Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти к основному содержанию',
     'nav-label': 'Основная навигация',
-    'lang-aria': 'Выбрать язык',
-    'lang-en': 'Английский',
-    'lang-es': 'Испанский',
-    'lang-ua': 'Украинский',
-    'lang-ru': 'Русский',
     'lang-announce': 'Язык изменён на Русский'
   }
 };
@@ -215,8 +186,7 @@ function applyLang(lang) {
   setDesc('card-4-desc', t['card-4-desc']);
   document.getElementById('section-approach-label').textContent = t['section-approach-label'];
   document.getElementById('section-approach-title').innerHTML = t['section-approach-title'];
-  document.getElementById('card-a1-title').textContent = t['card-a1-title'];
-  setDesc('card-a1-desc', t['card-a1-desc']);
+  document.getElementById('card-a1-title').innerHTML = t['card-a1-title'];
   document.getElementById('card-a2-title').textContent = t['card-a2-title'];
   setDesc('card-a2-desc', t['card-a2-desc']);
   document.getElementById('card-a3-title').textContent = t['card-a3-title'];

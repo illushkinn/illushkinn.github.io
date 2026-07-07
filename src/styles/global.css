@@ -84,6 +84,7 @@ h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
 p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 .mono { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .text-accent { color: var(--accent); }
+.text-white { color: var(--color-white); }
 .text-dim { color: var(--body-dim); }
 
 /* ========================================
@@ -152,13 +153,6 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
-.nav-brand {
-  font-weight: 600;
-  color: var(--headline);
-  text-decoration: none;
-  font-size: 1rem;
-}
-.nav-brand span { color: var(--accent); }
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -490,22 +484,8 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 640px) {
   .nav { justify-content: flex-end; }
   .hamburger { display: flex; }
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-    background: rgba(10,10,10,0.96);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    padding: 1.5rem 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  /* .nav-links.active removed — replaced by clip-path overlay */
+  .nav-links { display: none; }
+  /* Mobile menu overlay replaces inline nav */
   .hero {
     padding-top: 3.5rem;
     min-height: 100dvh;
