@@ -17,16 +17,18 @@ const i18n = {
     'card-1-desc': 'WCAG audits to full remediation. Argentina first, LATAM next.',
     'card-2-title': 'Digital Accessibility',
     'card-3-title': 'AI Automation',
-    'card-4-title': 'Digital Inclusion',
+    'card-4-title': 'Schools & Education',
+    'card-4-desc': 'Accessible platforms for public and private schools. EdTech with inclusion built-in.',
     'section-approach-label': 'How We Build',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, UX-centered.',
-    'card-a1-title': 'OKLCH Design Systems',
-    'card-a1-desc': 'OKLCH color architecture. Perceptually uniform. Accessible by default.',
-    'card-a2-title': 'Spec-First Development',
-    'card-a2-desc': '6 stages: explore, propose, spec, design, tasks, test. Tests before code.',
-    'card-a3-title': 'CSS-First, AI-Assisted',
-    'card-a3-desc': 'CSS-first. AI-accelerated audits. Human-led architecture.',
-    'card-a4-title': '4 Languages, Global Reach',
+    'card-a1-title': 'Design That Includes Everyone',
+    'card-a1-desc': 'Your website or app works for every person, however they access it. Inclusion isn\'t extra — it\'s built in from day one.',
+    'card-a2-title': 'First We Understand, Then We Build',
+    'card-a2-desc': 'No guessing. We define goals, design, test, and only then write code. Fewer surprises, better results.',
+    'card-a3-title': 'The Right Tools for Your Project',
+    'card-a3-desc': 'We don\'t use the newest tech just because. We choose what solves your real problem — without inflating costs.',
+    'card-a4-title': 'Your Message Reaches Further',
+    'card-a4-desc': 'We don\'t just translate: we adapt your message so it connects with each audience. More reach, without losing your voice.',
     'section-contact-label': 'Let\'s Talk',
     'section-contact-title': 'Got a project? <span class="text-accent">Let\'s build it</span>.',
     'section-contact-desc': 'One conversation can change your approach to digital. Let\'s talk about your project.',
@@ -56,17 +58,18 @@ const i18n = {
     'card-2-title': 'Accesibilidad Digital',
     'card-3-title': 'Automatizaci\u00F3n con IA',
     'card-3-desc': 'Agentes de IA para gobierno. De CRM a reportes de accesibilidad.',
-    'card-4-title': 'Inclusión Digital',
-    'section-approach-label': 'C\u00F3mo Construimos',
+    'card-4-title': 'Escuelas y Educación',
+    'card-4-desc': 'Plataformas accesibles para escuelas públicas y privadas. EdTech con inclusión desde el vamos.',
+    'section-approach-label': 'Cómo Construimos',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, centrado en UX.',
-    'card-a1-title': 'Sistemas de Dise\u00F1o OKLCH',
-    'card-a1-desc': 'Arquitectura de color OKLCH. Perceptualmente uniforme. Accesible por defecto.',
-    'card-a2-title': 'Desarrollo Spec-First',
-    'card-a2-desc': '6 etapas: explorar, proponer, especificar, dise\u00F1ar, tareas, testear. Tests antes del c\u00F3digo.',
-    'card-a3-title': 'CSS-First, Asistido por IA',
-    'card-a3-desc': 'CSS-first. Auditor\u00EDas aceleradas con IA. Arquitectura liderada por humanos.',
-    'card-a4-title': '4 Idiomas, Alcance Global',
-    'card-a4-desc': 'UA, RU, ES, EN. El mensaje se adapta a la cultura, no solo las palabras.',
+    'card-a1-title': 'Diseño que incluye a todos',
+    'card-a1-desc': 'Tu web o app funciona para todas las personas, sin importar cómo accedan. La inclusión no es un extra: está desde el día uno.',
+    'card-a2-title': 'Primero entendemos, después construimos',
+    'card-a2-desc': 'Nada de adivinar. Definimos objetivos, diseñamos, probamos, y recién ahí escribimos código. Menos sorpresas, mejores resultados.',
+    'card-a3-title': 'Las herramientas justas para tu proyecto',
+    'card-a3-desc': 'No usamos lo más nuevo porque sí. Elegimos lo que resuelve tu problema real, sin inflar costos ni complejidad.',
+    'card-a4-title': 'Tu mensaje llega más lejos',
+    'card-a4-desc': 'No traducimos nomás: adaptamos tu mensaje para que conecte con cada audiencia. Más alcance, sin perder tu voz.',
     'section-contact-label': 'Hablemos',
     'section-contact-title': '\u00BFUn proyecto? <span class="text-accent">Construy\u00E1moslo</span>.',
     'section-contact-desc': 'Una conversaci\u00F3n puede cambiar tu enfoque digital. Hablemos de tu proyecto.',
@@ -98,18 +101,18 @@ const i18n = {
     'card-2-desc': 'Для нейровідмінних користувачів. Прискорено ШІ. Створено, щоб включати.',
     'card-3-title': 'Автоматизація з ШІ',
     'card-3-desc': 'Агенти ШІ для уряду. Від CRM до звітів доступності.',
-    'card-4-title': 'Цифрова Інклюзія',
-    'card-4-desc': 'Від WCAG аудиту до повної ремедіації. Запуск, моніторинг, підтримка — наскрізна доставка.',
+    'card-4-title': 'Школи та Освіта',
+    'card-4-desc': 'Доступні платформи для державних і приватних шкіл. EdTech з інклюзією з самого початку.',
     'section-approach-label': 'Як ми будуємо',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, орієнтовано на UX.',
-    'card-a1-title': 'OKLCH системи дизайну',
-    'card-a1-desc': 'Архітектура кольору OKLCH. Перцептивно рівномірна. Доступна за замовчуванням.',
-    'card-a2-title': 'Spec-First розробка',
-    'card-a2-desc': '6 етапів: дослідити, запропонувати, специфікувати, спроектувати, задачі, тести. Тести перед кодом.',
-    'card-a3-title': 'CSS-First, з допомогою ШІ',
-    'card-a3-desc': 'CSS-first. Аудити прискорені ШІ. Архітектура під керівництвом людини.',
-    'card-a4-title': '4 мови, глобальне охоплення',
-    'card-a4-desc': 'UA, RU, ES, EN. Повідомлення адаптується до культури, а не лише слова.',
+    'card-a1-title': 'Дизайн, який включає всіх',
+    'card-a1-desc': 'Ваш сайт чи додаток працює для кожної людини, незалежно від того, як вона отримує доступ. Інклюзія не є додатковою опцією — вона вбудована з першого дня.',
+    'card-a2-title': 'Спочатку розуміємо, потім будуємо',
+    'card-a2-desc': 'Жодних здогадок. Визначаємо цілі, проектуємо, тестуємо, і тільки тоді пишемо код. Менше сюрпризів, кращі результати.',
+    'card-a3-title': 'Правильні інструменти для вашого проекту',
+    'card-a3-desc': 'Ми не використовуємо найновіші технології просто тому. Ми обираємо те, що вирішує вашу реальну проблему — без завищення витрат.',
+    'card-a4-title': 'Ваше повідомлення сягає далі',
+    'card-a4-desc': 'Ми не просто перекладаємо: ми адаптуємо ваше повідомлення, щоб воно резонувало з кожною аудиторією. Більше охоплення, без втрати вашого голосу.',
     'section-contact-label': 'Поговорімо',
     'section-contact-title': 'Маєте проект? <span class="text-accent">Давайте побудуємо</span>.',
     'section-contact-desc': 'Одна розмова може змінити ваш підхід до цифрового. Розкажіть про свій проект.',
@@ -141,18 +144,18 @@ const i18n = {
     'card-2-desc': 'Для нейроотличных пользователей. Ускорено ИИ. Создано, чтобы включать.',
     'card-3-title': 'Автоматизация с ИИ',
     'card-3-desc': 'Агенты ИИ для государства. От CRM до отчетов доступности.',
-    'card-4-title': 'Цифровая Инклюзия',
-    'card-4-desc': 'От WCAG аудита до полной ремедиации. Запуск, мониторинг, поддержка — сквозная доставка.',
+    'card-4-title': 'Школы и Образование',
+    'card-4-desc': 'Доступные платформы для государственных и частных школ. EdTech с инклюзией с самого начала.',
     'section-approach-label': 'Как мы строим',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, ориентировано на UX.',
-    'card-a1-title': 'Дизайн-системы OKLCH',
-    'card-a1-desc': 'Архитектура цвета OKLCH. Перцептивно равномерная. Доступная по умолчанию.',
-    'card-a2-title': 'Разработка Spec-First',
-    'card-a2-desc': '6 этапов: исследовать, предложить, специфицировать, спроектировать, задачи, тесты. Тесты перед кодом.',
-    'card-a3-title': 'CSS-First, ИИ-ассистировано',
-    'card-a3-desc': 'CSS-first. Аудиты ускорены ИИ. Архитектура под руководством человека.',
-    'card-a4-title': '4 языка, глобальный охват',
-    'card-a4-desc': 'UA, RU, ES, EN. Сообщение адаптируется к культуре, а не только слова.',
+    'card-a1-title': 'Дизайн, который включает всех',
+    'card-a1-desc': 'Ваш сайт или приложение работает для каждого человека, независимо от того, как он получает доступ. Инклюзия не является дополнительной опцией — она встроена с первого дня.',
+    'card-a2-title': 'Сначала понимаем, потом строим',
+    'card-a2-desc': 'Никаких догадок. Определяем цели, проектируем, тестируем, и только потом пишем код. Меньше сюрпризов, лучшие результаты.',
+    'card-a3-title': 'Правильные инструменты для вашего проекта',
+    'card-a3-desc': 'Мы не используем новейшие технологии просто потому что. Мы выбираем то, что решает вашу реальную проблему — без завышения затрат.',
+    'card-a4-title': 'Ваше сообщение достигает большего',
+    'card-a4-desc': 'Мы не просто переводим: мы адаптируем ваше сообщение, чтобы оно резонировало с каждой аудиторией. Больше охвата, без потери вашего голоса.',
     'section-contact-label': 'Давайте поговорим',
     'section-contact-title': 'Есть проект? <span class="text-accent">Давайте создадим</span>.',
     'section-contact-desc': 'Один разговор может изменить ваш подход к цифровому. Расскажите о своем проекте.',
@@ -169,6 +172,11 @@ const i18n = {
 };
 
 let currentLang = localStorage.getItem('lang') || 'es';
+
+function setDesc(id, text) {
+  var el = document.getElementById(id);
+  if (el && text) el.textContent = text;
+}
 
 function applyLang(lang) {
   const t = i18n[lang];
@@ -204,14 +212,17 @@ function applyLang(lang) {
   document.getElementById('card-2-title').textContent = t['card-2-title'];
   document.getElementById('card-3-title').textContent = t['card-3-title'];
   document.getElementById('card-4-title').textContent = t['card-4-title'];
+  setDesc('card-4-desc', t['card-4-desc']);
   document.getElementById('section-approach-label').textContent = t['section-approach-label'];
   document.getElementById('section-approach-title').innerHTML = t['section-approach-title'];
   document.getElementById('card-a1-title').textContent = t['card-a1-title'];
-  var cardA1desc = document.getElementById('card-a1-desc');
-  if (cardA1desc && t['card-a1-desc']) cardA1desc.textContent = t['card-a1-desc'];
+  setDesc('card-a1-desc', t['card-a1-desc']);
   document.getElementById('card-a2-title').textContent = t['card-a2-title'];
+  setDesc('card-a2-desc', t['card-a2-desc']);
   document.getElementById('card-a3-title').textContent = t['card-a3-title'];
+  setDesc('card-a3-desc', t['card-a3-desc']);
   document.getElementById('card-a4-title').textContent = t['card-a4-title'];
+  setDesc('card-a4-desc', t['card-a4-desc']);
   document.getElementById('section-contact-label').textContent = t['section-contact-label'];
   document.getElementById('section-contact-title').innerHTML = t['section-contact-title'];
   document.getElementById('section-contact-desc').textContent = t['section-contact-desc'];
