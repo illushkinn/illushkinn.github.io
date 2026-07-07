@@ -17,7 +17,7 @@ const i18n = {
     'card-1-desc': 'WCAG audits to full remediation. Argentina first, LATAM next.',
     'card-2-title': 'Digital Accessibility',
     'card-3-title': 'AI Automation',
-    'card-4-title': 'Audit to Launch',
+    'card-4-title': 'Digital Inclusion',
     'section-approach-label': 'How We Build',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, UX-centered.',
     'card-a1-title': 'OKLCH Design Systems',
@@ -29,7 +29,7 @@ const i18n = {
     'card-a4-title': '4 Languages, Global Reach',
     'section-contact-label': 'Let\'s Talk',
     'section-contact-title': 'Got a project? <span class="text-accent">Let\'s build it</span>.',
-    'section-contact-desc': 'Accessibility audit, AI workflow, or digital strategy — available for consulting across LATAM.',
+    'section-contact-desc': 'One conversation can change your approach to digital. Let\'s talk about your project.',
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Skip to main content',
     'nav-label': 'Main navigation',
@@ -56,7 +56,7 @@ const i18n = {
     'card-2-title': 'Accesibilidad Digital',
     'card-3-title': 'Automatizaci\u00F3n con IA',
     'card-3-desc': 'Agentes de IA para gobierno. De CRM a reportes de accesibilidad.',
-    'card-4-title': 'Auditor\u00EDa a Lanzamiento',
+    'card-4-title': 'Inclusión Digital',
     'section-approach-label': 'C\u00F3mo Construimos',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, centrado en UX.',
     'card-a1-title': 'Sistemas de Dise\u00F1o OKLCH',
@@ -69,7 +69,7 @@ const i18n = {
     'card-a4-desc': 'UA, RU, ES, EN. El mensaje se adapta a la cultura, no solo las palabras.',
     'section-contact-label': 'Hablemos',
     'section-contact-title': '\u00BFUn proyecto? <span class="text-accent">Construy\u00E1moslo</span>.',
-    'section-contact-desc': 'Auditor\u00EDa de accesibilidad, workflow con IA, o estrategia digital — disponible para consultor\u00EDa en LATAM.',
+    'section-contact-desc': 'Una conversaci\u00F3n puede cambiar tu enfoque digital. Hablemos de tu proyecto.',
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Saltar al contenido principal',
     'nav-label': 'Navegaci\u00F3n principal',
@@ -98,7 +98,7 @@ const i18n = {
     'card-2-desc': 'Для нейровідмінних користувачів. Прискорено ШІ. Створено, щоб включати.',
     'card-3-title': 'Автоматизація з ШІ',
     'card-3-desc': 'Агенти ШІ для уряду. Від CRM до звітів доступності.',
-    'card-4-title': 'Аудит до Запуску',
+    'card-4-title': 'Цифрова Інклюзія',
     'card-4-desc': 'Від WCAG аудиту до повної ремедіації. Запуск, моніторинг, підтримка — наскрізна доставка.',
     'section-approach-label': 'Як ми будуємо',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, орієнтовано на UX.',
@@ -112,7 +112,7 @@ const i18n = {
     'card-a4-desc': 'UA, RU, ES, EN. Повідомлення адаптується до культури, а не лише слова.',
     'section-contact-label': 'Поговорімо',
     'section-contact-title': 'Маєте проект? <span class="text-accent">Давайте побудуємо</span>.',
-    'section-contact-desc': 'Аудит доступності, робочий процес з ШІ, цифрова стратегія — доступний для консультацій у LATAM.',
+    'section-contact-desc': 'Одна розмова може змінити ваш підхід до цифрового. Розкажіть про свій проект.',
     'footer-text': '\u00A9 2026 \u00B7 Ілля Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти до основного вмісту',
     'nav-label': 'Головна навігація',
@@ -141,7 +141,7 @@ const i18n = {
     'card-2-desc': 'Для нейроотличных пользователей. Ускорено ИИ. Создано, чтобы включать.',
     'card-3-title': 'Автоматизация с ИИ',
     'card-3-desc': 'Агенты ИИ для государства. От CRM до отчетов доступности.',
-    'card-4-title': 'Аудит до Запуска',
+    'card-4-title': 'Цифровая Инклюзия',
     'card-4-desc': 'От WCAG аудита до полной ремедиации. Запуск, мониторинг, поддержка — сквозная доставка.',
     'section-approach-label': 'Как мы строим',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, ориентировано на UX.',
@@ -155,7 +155,7 @@ const i18n = {
     'card-a4-desc': 'UA, RU, ES, EN. Сообщение адаптируется к культуре, а не только слова.',
     'section-contact-label': 'Давайте поговорим',
     'section-contact-title': 'Есть проект? <span class="text-accent">Давайте создадим</span>.',
-    'section-contact-desc': 'Аудит доступности, ИИ-воркфлоу или цифровая стратегия — доступен для консалтинга по всей LATAM.',
+    'section-contact-desc': 'Один разговор может изменить ваш подход к цифровому. Расскажите о своем проекте.',
     'footer-text': '\u00A9 2026 \u00B7 Илья Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти к основному содержанию',
     'nav-label': 'Основная навигация',
@@ -168,7 +168,7 @@ const i18n = {
   }
 };
 
-let currentLang = localStorage.getItem('lang') || 'en';
+let currentLang = localStorage.getItem('lang') || 'es';
 
 function applyLang(lang) {
   const t = i18n[lang];
@@ -181,6 +181,16 @@ function applyLang(lang) {
   document.getElementById('nav-work').textContent = t['nav-work'];
   document.getElementById('nav-approach').textContent = t['nav-approach'];
   document.getElementById('nav-contact').textContent = t['nav-contact'];
+  // Mobile menu links
+  var mobileWork = document.getElementById('nav-work-mobile');
+  var mobileApproach = document.getElementById('nav-approach-mobile');
+  var mobileContact = document.getElementById('nav-contact-mobile');
+  if (mobileWork) mobileWork.textContent = t['nav-work'];
+  if (mobileApproach) mobileApproach.textContent = t['nav-approach'];
+  if (mobileContact) mobileContact.textContent = t['nav-contact'];
+  // Sync mobile lang-select
+  var mobileLangSelect = document.getElementById('langSelectMobile');
+  if (mobileLangSelect) mobileLangSelect.value = lang;
   document.getElementById('tag-1').textContent = t['tag-1'];
   document.getElementById('tag-2').textContent = t['tag-2'];
   document.getElementById('tag-3').textContent = t['tag-3'];
@@ -197,6 +207,8 @@ function applyLang(lang) {
   document.getElementById('section-approach-label').textContent = t['section-approach-label'];
   document.getElementById('section-approach-title').innerHTML = t['section-approach-title'];
   document.getElementById('card-a1-title').textContent = t['card-a1-title'];
+  var cardA1desc = document.getElementById('card-a1-desc');
+  if (cardA1desc && t['card-a1-desc']) cardA1desc.textContent = t['card-a1-desc'];
   document.getElementById('card-a2-title').textContent = t['card-a2-title'];
   document.getElementById('card-a3-title').textContent = t['card-a3-title'];
   document.getElementById('card-a4-title').textContent = t['card-a4-title'];

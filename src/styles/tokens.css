@@ -1,0 +1,61 @@
+/* ========================================
+   🎨 TOKENS — Shared Design System
+   Signature: Onest + Ocre + JetBrains Mono
+   ======================================== */
+
+:root {
+  /* ── Typography ── */
+  --font-display: 'Onest', sans-serif;
+  --font-body: 'Onest', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* ── Spacing scale (4px base, in rem) ── */
+  --space-3xs: 0.25rem;   /*  4px */
+  --space-2xs: 0.5rem;    /*  8px */
+  --space-xs:  0.75rem;   /* 12px */
+  --space-sm:  1rem;      /* 16px */
+  --space-md:  1.5rem;    /* 24px */
+  --space-lg:  2rem;      /* 32px */
+  --space-xl:  3rem;      /* 48px */
+  --space-2xl: 4rem;      /* 64px */
+  --space-3xl: 6rem;      /* 96px */
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 400ms;
+
+  /* ── Layout ── */
+  --content-max: 1040px;
+  --content-narrow: 720px;
+
+  /* ── Colors (dark theme) ── */
+  --color-bg: #0A0A0A;
+  --color-bg-elevated: #111113;
+  --color-headline: #F9F9F9;
+  --color-body: #D4D4D8;
+  --color-dim: #9B9DA0;
+  --color-white: #FFFFFF;
+
+  /* Signature accent: deep teal */
+  --accent: oklch(0.55 0.14 190);
+  --accent-hover: oklch(0.48 0.16 190);
+  --accent-muted: oklch(0.55 0.06 190);
+
+  /* Glass defaults */
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
