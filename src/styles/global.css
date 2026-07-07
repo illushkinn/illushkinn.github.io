@@ -50,10 +50,10 @@ body::before {
   --headline: #F9F9F9;
   --body: #D4D4D8;
   --body-dim: #9B9DA0;
-  /* Primary: ocre (golden warm) */
-  --accent: oklch(0.72 0.12 75);
-  --accent-hover: oklch(0.65 0.14 75);
-  --accent-muted: oklch(0.62 0.06 75);
+  /* Primary: ocre (golden warm, increased intensity) */
+  --accent: oklch(0.70 0.18 75);
+  --accent-hover: oklch(0.62 0.20 75);
+  --accent-muted: oklch(0.62 0.08 75);
   /* Secondary: keep cyan as technical accent */
   --cyan: #1AB4A4;
   --cyan-hover: #27D4D8;
@@ -93,11 +93,10 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   padding: 1.75rem;
-  transition: border-color 0.3s, transform 0.2s;
+  transition: border-color 0.3s;
 }
 .glass-card:hover {
-  border-color: oklch(from var(--accent) l c h / 0.25);
-  transform: translateY(-2px);
+  border-color: oklch(from var(--accent) l c h / 0.3);
 }
 
 .card-icon { display: block; margin-bottom: 0.75rem; }
