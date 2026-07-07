@@ -8,7 +8,7 @@ const i18n = {
     'tag-2': 'WCAG Accessibility',
     'tag-3': 'Digital Inclusion',
     'hero-title': 'Digital accessibility<br>isn\'t just compliance.<span class="highlight">It\'s strategy.</span>',
-    'hero-sub': 'Accessible pages. WCAG audits with AI. Real inclusion, not a checklist.',
+    'hero-sub': 'Clear requirements. No user left behind.',
     'btn-primary': 'Start a conversation',
     'btn-secondary': 'View portfolio',
     'section-work-label': 'Focus Areas',
@@ -16,11 +16,8 @@ const i18n = {
     'card-1-title': 'Government & Public Admin',
     'card-1-desc': 'WCAG audits to full remediation. Argentina first, LATAM next.',
     'card-2-title': 'Digital Accessibility',
-    'card-2-desc': 'Built for neurodivergent users. AI-accelerated. Designed to include.',
     'card-3-title': 'AI Automation',
-    'card-3-desc': 'AI agents for government. From CRM to accessibility reports.',
     'card-4-title': 'Audit to Launch',
-    'card-4-desc': 'From WCAG audit to full remediation. Launch, monitor, maintain — end-to-end delivery.',
     'section-approach-label': 'How We Build',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, UX-centered.',
     'card-a1-title': 'OKLCH Design Systems',
@@ -30,7 +27,6 @@ const i18n = {
     'card-a3-title': 'CSS-First, AI-Assisted',
     'card-a3-desc': 'CSS-first. AI-accelerated audits. Human-led architecture.',
     'card-a4-title': '4 Languages, Global Reach',
-    'card-a4-desc': 'UA, RU, ES, EN. The message adapts to the culture, not just the words.',
     'section-contact-label': 'Let\'s Talk',
     'section-contact-title': 'Got a project? <span class="text-accent">Let\'s build it</span>.',
     'section-contact-desc': 'Accessibility audit, AI workflow, or digital strategy — available for consulting across LATAM.',
@@ -51,19 +47,16 @@ const i18n = {
     'tag-2': 'Accesibilidad WCAG',
     'tag-3': 'Inclusión Digital',
     'hero-title': 'Accesibilidad digital<br>no es solo cumplimiento.<span class="highlight">Es estrategia.</span>',
-    'hero-sub': 'P\u00E1ginas accesibles. Auditor\u00EDas WCAG con IA. Inclusi\u00F3n real, no checklist.',
+    'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
     'btn-primary': 'Conversemos',
     'btn-secondary': 'Ver portafolio',
     'section-work-label': '\u00C1reas de Enfoque',
     'section-work-title': 'Donde <span class="text-accent">entregamos</span>.',
     'card-1-title': 'Gobierno y Sector P\u00FAblico',
-    'card-1-desc': 'Auditor\u00EDas WCAG a remediaci\u00F3n completa. Argentina primero, LATAM despu\u00E9s.',
     'card-2-title': 'Accesibilidad Digital',
-    'card-2-desc': 'Para usuarios neurodivergentes. Acelerado con IA. Dise\u00F1ado para incluir.',
     'card-3-title': 'Automatizaci\u00F3n con IA',
     'card-3-desc': 'Agentes de IA para gobierno. De CRM a reportes de accesibilidad.',
     'card-4-title': 'Auditor\u00EDa a Lanzamiento',
-    'card-4-desc': 'De la auditor\u00EDa WCAG a la remediaci\u00F3n completa. Lanzamos, monitoreamos, mantenemos — entrega integral.',
     'section-approach-label': 'C\u00F3mo Construimos',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, centrado en UX.',
     'card-a1-title': 'Sistemas de Dise\u00F1o OKLCH',
@@ -94,7 +87,7 @@ const i18n = {
     'tag-2': 'WCAG Доступність',
     'tag-3': 'Цифрова Інклюзія',
     'hero-title': 'Цифрова доступність<br>це не просто відповідність.<span class="highlight">Це стратегія.</span>',
-    'hero-sub': 'Доступні сторінки. WCAG аудити з ШІ. Справжня інклюзія, не чекліст.',
+    'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
     'btn-primary': 'Почати розмову',
     'btn-secondary': 'Портфоліо',
     'section-work-label': 'Напрямки',
@@ -137,7 +130,7 @@ const i18n = {
     'tag-2': 'WCAG Доступность',
     'tag-3': 'Цифровая Инклюзия',
     'hero-title': 'Цифровая доступность<br>это не просто соответствие.<br><span class="highlight">Это стратегия.</span>',
-    'hero-sub': 'Доступные страницы. WCAG аудиты с ИИ. Реальная инклюзия, не чеклист.',
+    'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
     'btn-primary': 'Начать разговор',
     'btn-secondary': 'Портфолио',
     'section-work-label': 'Направления',
@@ -198,23 +191,15 @@ function applyLang(lang) {
   document.getElementById('section-work-label').textContent = t['section-work-label'];
   document.getElementById('section-work-title').innerHTML = t['section-work-title'];
   document.getElementById('card-1-title').textContent = t['card-1-title'];
-  document.getElementById('card-1-desc').textContent = t['card-1-desc'];
   document.getElementById('card-2-title').textContent = t['card-2-title'];
-  document.getElementById('card-2-desc').textContent = t['card-2-desc'];
   document.getElementById('card-3-title').textContent = t['card-3-title'];
-  document.getElementById('card-3-desc').textContent = t['card-3-desc'];
   document.getElementById('card-4-title').textContent = t['card-4-title'];
-  document.getElementById('card-4-desc').textContent = t['card-4-desc'];
   document.getElementById('section-approach-label').textContent = t['section-approach-label'];
   document.getElementById('section-approach-title').innerHTML = t['section-approach-title'];
   document.getElementById('card-a1-title').textContent = t['card-a1-title'];
-  document.getElementById('card-a1-desc').textContent = t['card-a1-desc'];
   document.getElementById('card-a2-title').textContent = t['card-a2-title'];
-  document.getElementById('card-a2-desc').textContent = t['card-a2-desc'];
   document.getElementById('card-a3-title').textContent = t['card-a3-title'];
-  document.getElementById('card-a3-desc').textContent = t['card-a3-desc'];
   document.getElementById('card-a4-title').textContent = t['card-a4-title'];
-  document.getElementById('card-a4-desc').textContent = t['card-a4-desc'];
   document.getElementById('section-contact-label').textContent = t['section-contact-label'];
   document.getElementById('section-contact-title').innerHTML = t['section-contact-title'];
   document.getElementById('section-contact-desc').textContent = t['section-contact-desc'];
