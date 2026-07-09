@@ -147,7 +147,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem clamp(1.5rem, 5vw, 3rem);
+  padding: 0.6rem clamp(1.5rem, 5vw, 3rem);
   background: rgba(10,10,10,0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -322,6 +322,8 @@ a:focus-visible, button:focus-visible {
   cursor: pointer;
   padding: 0.5rem;
   z-index: 101;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 .hamburger span {
   display: block;
