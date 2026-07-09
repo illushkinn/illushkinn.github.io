@@ -261,7 +261,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   display: block;
   color: var(--accent);
   margin-top: 0.15em;
-  transition: opacity 0.35s ease;
+  transition: opacity 0.2s ease;
   min-height: 1.1em;
 }
 .hero h1 .highlight.is-hidden {

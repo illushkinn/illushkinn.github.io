@@ -14,8 +14,10 @@ const i18n = {
     'hero-sub': 'Clear requirements. No user left behind.',
     'hero-title-highlight': [
       'It\'s strategy.',
-      'WCAG by design.',
-      'GovTech + AI.'
+      'WCAG-first.',
+      'GovTech + AI.',
+      'User-first.',
+      'No barriers.'
     ],
     'btn-primary': 'Start a conversation',
     'btn-secondary': 'View portfolio',
@@ -56,8 +58,10 @@ const i18n = {
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
     'hero-title-highlight': [
       'Es estrategia.',
-      'WCAG por diseño.',
-      'GovTech + IA.'
+      'WCAG-first.',
+      'GovTech + IA.',
+      'User-first.',
+      'Sin barreras.'
     ],
     'btn-primary': 'Conversemos',
     'btn-secondary': 'Ver portafolio',
@@ -98,8 +102,10 @@ const i18n = {
     'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
     'hero-title-highlight': [
       'Це стратегія.',
-      'WCAG за дизайном.',
-      'GovTech + ШІ.'
+      'WCAG-first.',
+      'GovTech + ШІ.',
+      'User-first.',
+      'Без бар\'єрів.'
     ],
     'btn-primary': 'Почати розмову',
     'btn-secondary': 'Портфоліо',
@@ -140,8 +146,10 @@ const i18n = {
     'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
     'hero-title-highlight': [
       'Это стратегия.',
-      'WCAG по дизайну.',
-      'GovTech + ИИ.'
+      'WCAG-first.',
+      'GovTech + ИИ.',
+      'User-first.',
+      'Без барьеров.'
     ],
     'btn-primary': 'Начать разговор',
     'btn-secondary': 'Портфолио',
@@ -223,8 +231,8 @@ function applyLang(lang) {
       setTimeout(function() {
         hlEl.textContent = phrases[cyclingIndex];
         hlEl.classList.remove('is-hidden');
-      }, 350);
-    }, 3200);
+      }, 200);
+    }, 2800);
   }
   document.getElementById('btn-primary').textContent = t['btn-primary'];
   document.getElementById('btn-secondary').textContent = t['btn-secondary'];
@@ -287,8 +295,8 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
               el.textContent = phrases[cyclingIndex];
               el.classList.remove('is-hidden');
-            }, 350);
-          }, 3200);
+            }, 200);
+          }, 2800);
         }
       }
     }
