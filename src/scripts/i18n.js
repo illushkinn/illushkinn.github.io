@@ -14,10 +14,9 @@ const i18n = {
     'hero-sub': 'Clear requirements. No user left behind.',
     'hero-title-highlight': [
       'It\'s strategy.',
-      'WCAG-first.',
-      'GovTech + AI.',
-      'User-first.',
-      'No barriers.'
+      'It\'s an investment.',
+      'It builds trust.',
+      'It opens markets.'
     ],
     'btn-primary': 'Start a conversation',
     'btn-secondary': 'View portfolio',
@@ -58,10 +57,9 @@ const i18n = {
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
     'hero-title-highlight': [
       'Es estrategia.',
-      'WCAG-first.',
-      'GovTech + IA.',
-      'User-first.',
-      'Sin barreras.'
+      'Es inversión.',
+      'Genera confianza.',
+      'Abre mercados.'
     ],
     'btn-primary': 'Conversemos',
     'btn-secondary': 'Ver portafolio',
@@ -102,10 +100,9 @@ const i18n = {
     'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
     'hero-title-highlight': [
       'Це стратегія.',
-      'WCAG-first.',
-      'GovTech + ШІ.',
-      'User-first.',
-      'Без бар\'єрів.'
+      'Це інвестиція.',
+      'Створює довіру.',
+      'Відкриває ринки.'
     ],
     'btn-primary': 'Почати розмову',
     'btn-secondary': 'Портфоліо',
@@ -146,10 +143,9 @@ const i18n = {
     'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
     'hero-title-highlight': [
       'Это стратегия.',
-      'WCAG-first.',
-      'GovTech + ИИ.',
-      'User-first.',
-      'Без барьеров.'
+      'Это инвестиция.',
+      'Создает доверие.',
+      'Открывает рынки.'
     ],
     'btn-primary': 'Начать разговор',
     'btn-secondary': 'Портфолио',
