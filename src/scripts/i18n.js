@@ -15,7 +15,6 @@ const i18n = {
     'hero-title-highlight': [
       'It\'s strategy.',
       'WCAG by design.',
-      'Digital inclusion.',
       'GovTech + AI.'
     ],
     'btn-primary': 'Start a conversation',
@@ -58,7 +57,6 @@ const i18n = {
     'hero-title-highlight': [
       'Es estrategia.',
       'WCAG por diseño.',
-      'Inclusión digital.',
       'GovTech + IA.'
     ],
     'btn-primary': 'Conversemos',
@@ -101,7 +99,6 @@ const i18n = {
     'hero-title-highlight': [
       'Це стратегія.',
       'WCAG за дизайном.',
-      'Цифрова інклюзія.',
       'GovTech + ШІ.'
     ],
     'btn-primary': 'Почати розмову',
@@ -144,7 +141,6 @@ const i18n = {
     'hero-title-highlight': [
       'Это стратегия.',
       'WCAG по дизайну.',
-      'Цифровая инклюзия.',
       'GovTech + ИИ.'
     ],
     'btn-primary': 'Начать разговор',
