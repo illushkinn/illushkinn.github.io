@@ -10,7 +10,7 @@ const i18n = {
     'tag-1': 'AI · GovTech',
     'tag-2': 'WCAG Accessibility',
     'tag-3': 'Digital Inclusion',
-    'hero-title': 'Digital accessibility<br>isn\'t just compliance.<span class="highlight">It\'s strategy.</span>',
+    'hero-title': 'Digital accessibility<br>isn\'t just compliance.<span class="highlight" id="hero-highlight">It\'s strategy.</span>',
     'hero-sub': 'Clear requirements. No user left behind.',
     'hero-title-highlight': [
       'It\'s strategy.',
@@ -52,7 +52,7 @@ const i18n = {
     'tag-1': 'IA · GovTech',
     'tag-2': 'Accesibilidad WCAG',
     'tag-3': 'Inclusión Digital',
-    'hero-title': 'Accesibilidad digital<br>no es solo cumplimiento.<span class="highlight">Es estrategia.</span>',
+    'hero-title': 'Accesibilidad digital<br>no es solo cumplimiento.<span class="highlight" id="hero-highlight">Es estrategia.</span>',
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
     'hero-title-highlight': [
       'Es estrategia.',
@@ -94,7 +94,7 @@ const i18n = {
     'tag-1': 'ШІ · GovTech',
     'tag-2': 'WCAG Доступність',
     'tag-3': 'Цифрова Інклюзія',
-    'hero-title': 'Цифрова доступність<br>це не просто відповідність.<span class="highlight">Це стратегія.</span>',
+    'hero-title': 'Цифрова доступність<br>це не просто відповідність.<span class="highlight" id="hero-highlight">Це стратегія.</span>',
     'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
     'hero-title-highlight': [
       'Це стратегія.',
@@ -136,7 +136,7 @@ const i18n = {
     'tag-1': 'ИИ · GovTech',
     'tag-2': 'WCAG Доступность',
     'tag-3': 'Цифровая Инклюзия',
-    'hero-title': 'Цифровая доступность<br>это не просто соответствие.<br><span class="highlight">Это стратегия.</span>',
+    'hero-title': 'Цифровая доступность<br>это не просто соответствие.<br><span class="highlight" id="hero-highlight">Это стратегия.</span>',
     'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
     'hero-title-highlight': [
       'Это стратегия.',
