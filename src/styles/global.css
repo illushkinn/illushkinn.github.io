@@ -261,6 +261,11 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   display: block;
   color: var(--accent);
   margin-top: 0.15em;
+  transition: opacity 0.35s ease;
+  min-height: 1.1em;
+}
+.hero h1 .highlight.is-hidden {
+  opacity: 0;
 }
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -268,21 +273,6 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   max-width: 600px;
   line-height: 1.6;
   overflow-wrap: break-word;
-  min-height: 1.6em;
-}
-.hero-cycling-wrap {
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
-  color: var(--body-dim);
-  line-height: 1.5;
-  min-height: 1.5em;
-}
-.cycling-text {
-  display: inline;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-.cycling-text.is-hidden {
-  opacity: 0;
-  transform: translateY(6px);
 }
 .hero-actions {
   display: flex;
@@ -544,9 +534,6 @@ a:focus-visible, button:focus-visible {
   .hero-sub {
     font-size: clamp(1.5rem, 5vw, 1.8rem);
     line-height: 1.4;
-  }
-  .hero-cycling-wrap {
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
   }
   .hero-actions {
     gap: 1rem;

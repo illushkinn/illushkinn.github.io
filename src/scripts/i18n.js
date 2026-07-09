@@ -12,12 +12,11 @@ const i18n = {
     'tag-3': 'Digital Inclusion',
     'hero-title': 'Digital accessibility<br>isn\'t just compliance.<span class="highlight">It\'s strategy.</span>',
     'hero-sub': 'Clear requirements. No user left behind.',
-    'hero-sub-cycle': [
-      'Clear requirements. No user left behind.',
-      '<span class="highlight">It\'s strategy.</span> Digital accessibility.',
-      'WCAG compliance by design.',
-      'Digital inclusion that works.',
-      'GovTech. AI. Automation.'
+    'hero-title-highlight': [
+      'It\'s strategy.',
+      'WCAG by design.',
+      'Digital inclusion.',
+      'GovTech + AI.'
     ],
     'btn-primary': 'Start a conversation',
     'btn-secondary': 'View portfolio',
@@ -56,12 +55,11 @@ const i18n = {
     'tag-3': 'Inclusión Digital',
     'hero-title': 'Accesibilidad digital<br>no es solo cumplimiento.<span class="highlight">Es estrategia.</span>',
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
-    'hero-sub-cycle': [
-      'Requisitos claros. Ningún usuario queda afuera.',
-      '<span class="highlight">Es estrategia.</span> Accesibilidad digital.',
-      'Cumplimiento WCAG por diseño.',
-      'Inclusión digital que funciona.',
-      'GovTech. IA. Automatización.'
+    'hero-title-highlight': [
+      'Es estrategia.',
+      'WCAG por diseño.',
+      'Inclusión digital.',
+      'GovTech + IA.'
     ],
     'btn-primary': 'Conversemos',
     'btn-secondary': 'Ver portafolio',
@@ -100,12 +98,11 @@ const i18n = {
     'tag-3': 'Цифрова Інклюзія',
     'hero-title': 'Цифрова доступність<br>це не просто відповідність.<span class="highlight">Це стратегія.</span>',
     'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
-    'hero-sub-cycle': [
-      'Чіткі вимоги. Жоден користувач не залишається осторонь.',
-      '<span class="highlight">Стратегія.</span> Доступність. Вплив.',
-      'WCAG сумісність за дизайном.',
-      'Цифрова інклюзія, яка працює.',
-      'GovTech. ШІ. Автоматизація.'
+    'hero-title-highlight': [
+      'Це стратегія.',
+      'WCAG за дизайном.',
+      'Цифрова інклюзія.',
+      'GovTech + ШІ.'
     ],
     'btn-primary': 'Почати розмову',
     'btn-secondary': 'Портфоліо',
@@ -144,12 +141,11 @@ const i18n = {
     'tag-3': 'Цифровая Инклюзия',
     'hero-title': 'Цифровая доступность<br>это не просто соответствие.<br><span class="highlight">Это стратегия.</span>',
     'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
-    'hero-sub-cycle': [
-      'Чёткие требования. Ни один пользователь не остаётся в стороне.',
-      '<span class="highlight">Стратегия.</span> Доступность. Влияние.',
-      'WCAG совместимость по дизайну.',
-      'Цифровая инклюзия, которая работает.',
-      'GovTech. ИИ. Автоматизация.'
+    'hero-title-highlight': [
+      'Это стратегия.',
+      'WCAG по дизайну.',
+      'Цифровая инклюзия.',
+      'GovTech + ИИ.'
     ],
     'btn-primary': 'Начать разговор',
     'btn-secondary': 'Портфолио',
@@ -218,23 +214,21 @@ function applyLang(lang) {
   var subEl = document.getElementById('hero-sub');
   if (subEl) subEl.textContent = t['hero-sub'];
 
-  // Cycling text setup
-  var cycleEl = document.getElementById('cycling-text');
-  if (cycleEl && t['hero-sub-cycle']) {
-    // Clear existing interval
+  // Cycling highlight in hero title
+  var hlEl = document.getElementById('hero-highlight');
+  if (hlEl && t['hero-title-highlight']) {
     if (cyclingInterval) { clearInterval(cyclingInterval); cyclingInterval = null; }
-    var phrases = t['hero-sub-cycle'];
+    var phrases = t['hero-title-highlight'];
     cyclingIndex = 0;
-    cycleEl.innerHTML = phrases[0];
-    cycleEl.classList.remove('is-hidden');
+    hlEl.textContent = phrases[0];
     cyclingInterval = setInterval(function() {
       cyclingIndex = (cyclingIndex + 1) % phrases.length;
-      cycleEl.classList.add('is-hidden');
+      hlEl.classList.add('is-hidden');
       setTimeout(function() {
-        cycleEl.innerHTML = phrases[cyclingIndex];
-        cycleEl.classList.remove('is-hidden');
-      }, 400);
-    }, 3500);
+        hlEl.textContent = phrases[cyclingIndex];
+        hlEl.classList.remove('is-hidden');
+      }, 350);
+    }, 3200);
   }
   document.getElementById('btn-primary').textContent = t['btn-primary'];
   document.getElementById('btn-secondary').textContent = t['btn-secondary'];
@@ -287,18 +281,18 @@ document.addEventListener('DOMContentLoaded', function() {
       cyclingInterval = null;
     } else if (!document.hidden && !cyclingInterval) {
       var t = i18n[currentLang];
-      if (t && t['hero-sub-cycle']) {
-        var el = document.getElementById('cycling-text');
-        var phrases = t['hero-sub-cycle'];
+      if (t && t['hero-title-highlight']) {
+        var el = document.getElementById('hero-highlight');
+        var phrases = t['hero-title-highlight'];
         if (el) {
           cyclingInterval = setInterval(function() {
             cyclingIndex = (cyclingIndex + 1) % phrases.length;
             el.classList.add('is-hidden');
             setTimeout(function() {
-              el.innerHTML = phrases[cyclingIndex];
+              el.textContent = phrases[cyclingIndex];
               el.classList.remove('is-hidden');
-            }, 400);
-          }, 3500);
+            }, 350);
+          }, 3200);
         }
       }
     }
