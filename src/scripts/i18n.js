@@ -13,7 +13,7 @@ const i18n = {
     'hero-sub': 'Clear requirements. No user left behind.',
     'hero-sub-cycle': [
       'Clear requirements. No user left behind.',
-      'Strategy. Accessibility. Impact.',
+      'It\'s strategy. Digital accessibility.',
       'WCAG compliance by design.',
       'Digital inclusion that works.',
       'GovTech. AI. Automation.'
@@ -57,7 +57,7 @@ const i18n = {
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
     'hero-sub-cycle': [
       'Requisitos claros. Ningún usuario queda afuera.',
-      'Estrategia. Accesibilidad. Impacto.',
+      'Es estrategia. Accesibilidad digital.',
       'Cumplimiento WCAG por diseño.',
       'Inclusión digital que funciona.',
       'GovTech. IA. Automatización.'
