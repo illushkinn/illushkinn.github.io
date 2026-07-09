@@ -214,6 +214,10 @@ function applyLang(lang) {
   document.getElementById('tag-3').textContent = t['tag-3'];
   document.getElementById('hero-title').innerHTML = t['hero-title'];
 
+  // Static hero-sub text
+  var subEl = document.getElementById('hero-sub');
+  if (subEl) subEl.textContent = t['hero-sub'];
+
   // Cycling text setup
   var cycleEl = document.getElementById('cycling-text');
   if (cycleEl && t['hero-sub-cycle']) {
