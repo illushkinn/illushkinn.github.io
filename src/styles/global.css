@@ -148,6 +148,13 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   align-items: center;
   justify-content: center;
   padding: 0.6rem clamp(1.5rem, 5vw, 3rem);
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+}
+.nav.scrolled {
   background: rgba(10,10,10,0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -259,6 +266,15 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   max-width: 600px;
   line-height: 1.6;
   overflow-wrap: break-word;
+  min-height: 1.6em;
+}
+.cycling-text {
+  display: inline;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.cycling-text.is-hidden {
+  opacity: 0;
+  transform: translateY(6px);
 }
 .hero-actions {
   display: flex;

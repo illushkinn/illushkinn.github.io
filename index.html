@@ -118,9 +118,9 @@
         <span id="tag-3">Growth Partner</span>
       </div>
       <h1 id="hero-title">Digital accessibility<br>isn't just compliance.<span class="highlight">It's strategy.</span></h1>
-      <p class="hero-sub" id="hero-sub">
-        Clear requirements. No user left behind.
-      </p>
+      <div class="hero-sub" id="hero-sub" aria-live="polite">
+        <span class="cycling-text" id="cycling-text">Clear requirements. No user left behind.</span>
+      </div>
       <div class="hero-actions">
         <a href="mailto:illyagrytsyk@proton.me" class="btn btn-primary" id="btn-primary">Start a conversation</a>
         <a href="#work" class="btn btn-outline" id="btn-secondary">See my work</a>
@@ -325,6 +325,21 @@
       mainLangSelect.dispatchEvent(new Event('change'));
     });
   }
+})();
+
+// Navbar scroll: transparent → scrolled (like TBC)
+(function() {
+  var nav = document.querySelector('.nav');
+  if (!nav) return;
+  function onScroll() {
+    if (window.scrollY > 60) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 })();
 </script>
 

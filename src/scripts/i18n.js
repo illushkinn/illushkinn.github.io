@@ -1,4 +1,6 @@
 // ===== i18n =====
+var cyclingInterval = null;
+
 const i18n = {
   en: {
     'nav-work': 'Work',
@@ -9,6 +11,13 @@ const i18n = {
     'tag-3': 'Digital Inclusion',
     'hero-title': 'Digital accessibility<br>isn\'t just compliance.<span class="highlight">It\'s strategy.</span>',
     'hero-sub': 'Clear requirements. No user left behind.',
+    'hero-sub-cycle': [
+      'Clear requirements. No user left behind.',
+      'Strategy. Accessibility. Impact.',
+      'WCAG compliance by design.',
+      'Digital inclusion that works.',
+      'GovTech. AI. Automation.'
+    ],
     'btn-primary': 'Start a conversation',
     'btn-secondary': 'View portfolio',
     'section-work-label': 'Focus Areas',
@@ -46,6 +55,13 @@ const i18n = {
     'tag-3': 'Inclusión Digital',
     'hero-title': 'Accesibilidad digital<br>no es solo cumplimiento.<span class="highlight">Es estrategia.</span>',
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
+    'hero-sub-cycle': [
+      'Requisitos claros. Ningún usuario queda afuera.',
+      'Estrategia. Accesibilidad. Impacto.',
+      'Cumplimiento WCAG por diseño.',
+      'Inclusión digital que funciona.',
+      'GovTech. IA. Automatización.'
+    ],
     'btn-primary': 'Conversemos',
     'btn-secondary': 'Ver portafolio',
     'section-work-label': '\u00C1reas de Enfoque',
@@ -83,6 +99,13 @@ const i18n = {
     'tag-3': 'Цифрова Інклюзія',
     'hero-title': 'Цифрова доступність<br>це не просто відповідність.<span class="highlight">Це стратегія.</span>',
     'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
+    'hero-sub-cycle': [
+      'Чіткі вимоги. Жоден користувач не залишається осторонь.',
+      'Стратегія. Доступність. Вплив.',
+      'WCAG сумісність за дизайном.',
+      'Цифрова інклюзія, яка працює.',
+      'GovTech. ШІ. Автоматизація.'
+    ],
     'btn-primary': 'Почати розмову',
     'btn-secondary': 'Портфоліо',
     'section-work-label': 'Напрямки',
@@ -120,6 +143,13 @@ const i18n = {
     'tag-3': 'Цифровая Инклюзия',
     'hero-title': 'Цифровая доступность<br>это не просто соответствие.<br><span class="highlight">Это стратегия.</span>',
     'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
+    'hero-sub-cycle': [
+      'Чёткие требования. Ни один пользователь не остаётся в стороне.',
+      'Стратегия. Доступность. Влияние.',
+      'WCAG совместимость по дизайну.',
+      'Цифровая инклюзия, которая работает.',
+      'GovTech. ИИ. Автоматизация.'
+    ],
     'btn-primary': 'Начать разговор',
     'btn-secondary': 'Портфолио',
     'section-work-label': 'Направления',
@@ -182,7 +212,25 @@ function applyLang(lang) {
   document.getElementById('tag-2').textContent = t['tag-2'];
   document.getElementById('tag-3').textContent = t['tag-3'];
   document.getElementById('hero-title').innerHTML = t['hero-title'];
-  document.getElementById('hero-sub').textContent = t['hero-sub'];
+
+  // Cycling text setup
+  var cycleEl = document.getElementById('cycling-text');
+  if (cycleEl && t['hero-sub-cycle']) {
+    // Clear existing interval
+    if (cyclingInterval) { clearInterval(cyclingInterval); cyclingInterval = null; }
+    var phrases = t['hero-sub-cycle'];
+    var idx = 0;
+    cycleEl.textContent = phrases[0];
+    cycleEl.classList.remove('is-hidden');
+    cyclingInterval = setInterval(function() {
+      idx = (idx + 1) % phrases.length;
+      cycleEl.classList.add('is-hidden');
+      setTimeout(function() {
+        cycleEl.textContent = phrases[idx];
+        cycleEl.classList.remove('is-hidden');
+      }, 400);
+    }, 3500);
+  }
   document.getElementById('btn-primary').textContent = t['btn-primary'];
   document.getElementById('btn-secondary').textContent = t['btn-secondary'];
   document.getElementById('section-work-label').textContent = t['section-work-label'];
@@ -226,4 +274,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   applyLang(currentLang);
+
+  // Pause cycling when tab hidden, resume when visible
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden && cyclingInterval) {
+      clearInterval(cyclingInterval);
+      cyclingInterval = null;
+    } else if (!document.hidden && !cyclingInterval) {
+      var t = i18n[currentLang];
+      if (t && t['hero-sub-cycle']) {
+        var el = document.getElementById('cycling-text');
+        var phrases = t['hero-sub-cycle'];
+        if (el) {
+          var current = el.textContent;
+          var startIdx = phrases.indexOf(current);
+          if (startIdx === -1) startIdx = 0;
+          var idx = startIdx;
+          cyclingInterval = setInterval(function() {
+            idx = (idx + 1) % phrases.length;
+            el.classList.add('is-hidden');
+            setTimeout(function() {
+              el.textContent = phrases[idx];
+              el.classList.remove('is-hidden');
+            }, 400);
+          }, 3500);
+        }
+      }
+    }
+  });
 });
