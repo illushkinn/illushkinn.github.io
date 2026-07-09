@@ -1,5 +1,6 @@
 // ===== i18n =====
 var cyclingInterval = null;
+var cyclingIndex = 0;
 
 const i18n = {
   en: {
@@ -13,7 +14,7 @@ const i18n = {
     'hero-sub': 'Clear requirements. No user left behind.',
     'hero-sub-cycle': [
       'Clear requirements. No user left behind.',
-      'It\'s strategy. Digital accessibility.',
+      '<span class="highlight">It\'s strategy.</span> Digital accessibility.',
       'WCAG compliance by design.',
       'Digital inclusion that works.',
       'GovTech. AI. Automation.'
@@ -57,7 +58,7 @@ const i18n = {
     'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
     'hero-sub-cycle': [
       'Requisitos claros. Ningún usuario queda afuera.',
-      'Es estrategia. Accesibilidad digital.',
+      '<span class="highlight">Es estrategia.</span> Accesibilidad digital.',
       'Cumplimiento WCAG por diseño.',
       'Inclusión digital que funciona.',
       'GovTech. IA. Automatización.'
@@ -101,7 +102,7 @@ const i18n = {
     'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
     'hero-sub-cycle': [
       'Чіткі вимоги. Жоден користувач не залишається осторонь.',
-      'Стратегія. Доступність. Вплив.',
+      '<span class="highlight">Стратегія.</span> Доступність. Вплив.',
       'WCAG сумісність за дизайном.',
       'Цифрова інклюзія, яка працює.',
       'GovTech. ШІ. Автоматизація.'
@@ -145,7 +146,7 @@ const i18n = {
     'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
     'hero-sub-cycle': [
       'Чёткие требования. Ни один пользователь не остаётся в стороне.',
-      'Стратегия. Доступность. Влияние.',
+      '<span class="highlight">Стратегия.</span> Доступность. Влияние.',
       'WCAG совместимость по дизайну.',
       'Цифровая инклюзия, которая работает.',
       'GovTech. ИИ. Автоматизация.'
@@ -219,14 +220,14 @@ function applyLang(lang) {
     // Clear existing interval
     if (cyclingInterval) { clearInterval(cyclingInterval); cyclingInterval = null; }
     var phrases = t['hero-sub-cycle'];
-    var idx = 0;
-    cycleEl.textContent = phrases[0];
+    cyclingIndex = 0;
+    cycleEl.innerHTML = phrases[0];
     cycleEl.classList.remove('is-hidden');
     cyclingInterval = setInterval(function() {
-      idx = (idx + 1) % phrases.length;
+      cyclingIndex = (cyclingIndex + 1) % phrases.length;
       cycleEl.classList.add('is-hidden');
       setTimeout(function() {
-        cycleEl.textContent = phrases[idx];
+        cycleEl.innerHTML = phrases[cyclingIndex];
         cycleEl.classList.remove('is-hidden');
       }, 400);
     }, 3500);
@@ -286,15 +287,11 @@ document.addEventListener('DOMContentLoaded', function() {
         var el = document.getElementById('cycling-text');
         var phrases = t['hero-sub-cycle'];
         if (el) {
-          var current = el.textContent;
-          var startIdx = phrases.indexOf(current);
-          if (startIdx === -1) startIdx = 0;
-          var idx = startIdx;
           cyclingInterval = setInterval(function() {
-            idx = (idx + 1) % phrases.length;
+            cyclingIndex = (cyclingIndex + 1) % phrases.length;
             el.classList.add('is-hidden');
             setTimeout(function() {
-              el.textContent = phrases[idx];
+              el.innerHTML = phrases[cyclingIndex];
               el.classList.remove('is-hidden');
             }, 400);
           }, 3500);

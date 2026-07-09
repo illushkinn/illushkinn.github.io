@@ -1,5 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <!-- Illushkinn / Illya Grytsyk minimal mark -->
-  <rect x="2" y="2" width="28" height="28" rx="6" fill="oklch(0.55 0.14 190)"/>
-  <text x="16" y="23" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="20" fill="#fff">I</text>
+  <text x="16" y="26" text-anchor="middle" font-family="'Grand Hotel', cursive, serif" font-size="28" fill="#c47a68">i</text>
 </svg>
