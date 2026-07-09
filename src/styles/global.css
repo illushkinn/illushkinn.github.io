@@ -143,7 +143,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 101;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -324,7 +324,7 @@ a:focus-visible, button:focus-visible {
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 101;
+  z-index: 102;
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }
