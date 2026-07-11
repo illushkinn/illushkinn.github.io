@@ -11,7 +11,7 @@ const i18n = {
     'tag-2': 'WCAG Accessibility',
     'tag-3': 'Digital Inclusion',
     'hero-title': 'Digital accessibility<br>isn\'t just compliance.<span class="highlight" id="hero-highlight">It\'s strategy.</span>',
-    'hero-sub': 'Clear requirements. No user left behind.',
+    'hero-sub': 'Clear requirements. <strong>No one left behind.</strong>',
     'hero-title-highlight': [
       'It\'s strategy.',
       'It\'s an investment.',
@@ -57,7 +57,7 @@ const i18n = {
     'tag-2': 'Accesibilidad WCAG',
     'tag-3': 'Inclusión Digital',
     'hero-title': 'Accesibilidad digital<br>no es solo cumplimiento.<span class="highlight" id="hero-highlight">Es estrategia.</span>',
-    'hero-sub': 'Requisitos claros. Ningún usuario queda afuera.',
+    'hero-sub': 'Requisitos claros. <strong>Nadie queda afuera.</strong>',
     'hero-title-highlight': [
       'Es estrategia.',
       'Es inversión.',
@@ -103,7 +103,7 @@ const i18n = {
     'tag-2': 'WCAG Доступність',
     'tag-3': 'Цифрова Інклюзія',
     'hero-title': 'Цифрова доступність<br>це не просто відповідність.<span class="highlight" id="hero-highlight">Це стратегія.</span>',
-    'hero-sub': 'Чіткі вимоги. Жоден користувач не залишається осторонь.',
+    'hero-sub': 'Чіткі вимоги. <strong>Ніхто не залишається осторонь.</strong>',
     'hero-title-highlight': [
       'Це стратегія.',
       'Це інвестиція.',
@@ -149,7 +149,7 @@ const i18n = {
     'tag-2': 'WCAG Доступность',
     'tag-3': 'Цифровая Инклюзия',
     'hero-title': 'Цифровая доступность<br>это не просто соответствие.<br><span class="highlight" id="hero-highlight">Это стратегия.</span>',
-    'hero-sub': 'Чёткие требования. Ни один пользователь не остаётся в стороне.',
+    'hero-sub': 'Чёткие требования. <strong>Никто не остается в стороне.</strong>',
     'hero-title-highlight': [
       'Это стратегия.',
       'Это инвестиция.',
@@ -224,7 +224,7 @@ function applyLang(lang) {
 
   // Static hero-sub text
   var subEl = document.getElementById('hero-sub');
-  if (subEl) subEl.textContent = t['hero-sub'];
+  if (subEl) subEl.innerHTML = t['hero-sub'];
 
   // Cycling highlight in hero title
   var hlEl = document.getElementById('hero-highlight');
