@@ -15,7 +15,7 @@ const i18n = {
     'hero-title-highlight': [
       'It\'s strategy.',
       'It\'s an investment.',
-      'It builds trust.',
+      'It\'s trust.',
       'It opens markets.'
     ],
     'btn-primary': 'Start a conversation',
@@ -60,7 +60,7 @@ const i18n = {
     'hero-title-highlight': [
       'Es estrategia.',
       'Es inversión.',
-      'Genera confianza.',
+      'Es confianza.',
       'Abre mercados.'
     ],
     'btn-primary': 'Conversemos',
@@ -105,7 +105,7 @@ const i18n = {
     'hero-title-highlight': [
       'Це стратегія.',
       'Це інвестиція.',
-      'Створює довіру.',
+      'Це довіра.',
       'Відкриває ринки.'
     ],
     'btn-primary': 'Почати розмову',
@@ -150,7 +150,7 @@ const i18n = {
     'hero-title-highlight': [
       'Это стратегия.',
       'Это инвестиция.',
-      'Создает доверие.',
+      'Это доверие.',
       'Открывает рынки.'
     ],
     'btn-primary': 'Начать разговор',
