@@ -18,7 +18,6 @@ const i18n = {
       'It opens markets.'
     ],
     'btn-primary': 'Start a conversation',
-    'btn-secondary': 'View portfolio',
     'section-work-label': 'Focus Areas',
     'section-work-title': 'Where we <span class="text-accent">deliver</span>.',
     'card-1-title': 'Government & Public Admin',
@@ -63,7 +62,6 @@ const i18n = {
       'Abre mercados.'
     ],
     'btn-primary': 'Conversemos',
-    'btn-secondary': 'Ver portafolio',
     'section-work-label': '\u00C1reas de Enfoque',
     'section-work-title': 'Donde <span class="text-accent">entregamos</span>.',
     'card-1-title': 'Gobierno y Sector P\u00FAblico',
@@ -108,7 +106,6 @@ const i18n = {
       'Відкриває ринки.'
     ],
     'btn-primary': 'Почати розмову',
-    'btn-secondary': 'Портфоліо',
     'section-work-label': 'Напрямки',
     'section-work-title': 'Де <span class="text-accent">доставляємо</span>.',
     'card-1-title': 'Державний сектор',
@@ -153,7 +150,6 @@ const i18n = {
       'Открывает рынки.'
     ],
     'btn-primary': 'Начать разговор',
-    'btn-secondary': 'Портфолио',
     'section-work-label': 'Направления',
     'section-work-title': 'Где <span class="text-accent">доставляем</span>.',
     'card-1-title': 'Госуправление и администрирование',
@@ -244,7 +240,6 @@ function applyLang(lang) {
     }, 2800);
   }
   document.getElementById('btn-primary').textContent = t['btn-primary'];
-  document.getElementById('btn-secondary').textContent = t['btn-secondary'];
   document.getElementById('section-work-label').textContent = t['section-work-label'];
   document.getElementById('section-work-title').innerHTML = t['section-work-title'];
   document.getElementById('card-1-title').textContent = t['card-1-title'];
