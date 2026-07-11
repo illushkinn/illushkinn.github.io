@@ -82,7 +82,7 @@ h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); }
 h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 1.5rem; }
 h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
 p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
-.mono { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.mono { font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .text-accent { color: var(--accent); }
 .text-white { color: var(--color-white); }
 .text-dim { color: var(--body-dim); }
@@ -94,6 +94,8 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   padding: 1.75rem;
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(12px) saturate(120%);
   transition: border-color 0.3s;
 }
 .glass-card:hover {
@@ -152,14 +154,12 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   min-height: 56px;
   background: transparent;
   backdrop-filter: none;
-  -webkit-backdrop-filter: none;
   border-bottom: 1px solid transparent;
   transition: background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
 }
 .nav.scrolled {
   background: rgba(10,10,10,0.8);
   backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .nav-links {
@@ -415,7 +415,6 @@ a:focus-visible, button:focus-visible {
   z-index: 100;
   background: rgba(10, 10, 10, 0.78);
   backdrop-filter: blur(24px) saturate(140%);
-  -webkit-backdrop-filter: blur(24px) saturate(140%);
   display: flex;
   flex-direction: column;
   align-items: center;
