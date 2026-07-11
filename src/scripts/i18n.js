@@ -4,7 +4,6 @@ var cyclingIndex = 0;
 
 const i18n = {
   en: {
-    'nav-work': 'Work',
     'nav-approach': 'Approach',
     'nav-contact': 'Contact',
     'tag-1': 'AI · GovTech',
@@ -50,7 +49,6 @@ const i18n = {
     'mobile-menu-label': 'Navigation menu'
   },
   es: {
-    'nav-work': 'Trabajos',
     'nav-approach': 'Enfoque',
     'nav-contact': 'Contacto',
     'tag-1': 'IA · GovTech',
@@ -96,7 +94,6 @@ const i18n = {
     'mobile-menu-label': 'Men\u00FA de navegaci\u00F3n'
   },
   ua: {
-    'nav-work': 'Роботи',
     'nav-approach': 'Підхід',
     'nav-contact': 'Контакти',
     'tag-1': 'ШІ · GovTech',
@@ -142,7 +139,6 @@ const i18n = {
     'mobile-menu-label': 'Меню навігації'
   },
   ru: {
-    'nav-work': 'Проекты',
     'nav-approach': 'Подход',
     'nav-contact': 'Контакты',
     'tag-1': 'ИИ · GovTech',
@@ -204,14 +200,11 @@ function applyLang(lang) {
   document.querySelector('.nav').setAttribute('aria-label', t['nav-label']);
   const select = document.getElementById('langSelect');
   if (select) select.value = lang;
-  document.getElementById('nav-work').textContent = t['nav-work'];
   document.getElementById('nav-approach').textContent = t['nav-approach'];
   document.getElementById('nav-contact').textContent = t['nav-contact'];
   // Mobile menu links
-  var mobileWork = document.getElementById('nav-work-mobile');
   var mobileApproach = document.getElementById('nav-approach-mobile');
   var mobileContact = document.getElementById('nav-contact-mobile');
-  if (mobileWork) mobileWork.textContent = t['nav-work'];
   if (mobileApproach) mobileApproach.textContent = t['nav-approach'];
   if (mobileContact) mobileContact.textContent = t['nav-contact'];
   // Sync mobile lang-select
