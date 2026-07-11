@@ -181,7 +181,12 @@ const i18n = {
   }
 };
 
-let currentLang = localStorage.getItem('lang') || 'es';
+var urlLang = new URLSearchParams(window.location.search).get('lang');
+var savedLang = localStorage.getItem('lang');
+var currentLang = urlLang || savedLang || 'es';
+if (urlLang && urlLang !== savedLang) {
+  localStorage.setItem('lang', urlLang);
+}
 
 function setDesc(id, text) {
   var el = document.getElementById(id);
