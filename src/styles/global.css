@@ -538,6 +538,10 @@ a:focus-visible, button:focus-visible {
     font-size: clamp(1.5rem, 5vw, 1.8rem);
     line-height: 1.4;
   }
+  .hero-sub strong {
+    display: block;
+    margin-top: 0.15em;
+  }
   .hero-actions {
     gap: 1rem;
     margin-top: 1rem;
