@@ -51,7 +51,7 @@ body::before {
   --body: #D4D4D8;
   --body-dim: #9B9DA0;
   /* Primary: deep teal (professional, accessible) */
-  --accent: oklch(0.55 0.14 190);
+  --accent: oklch(0.60 0.14 190);
   --accent-hover: oklch(0.48 0.16 190);
   --accent-muted: oklch(0.55 0.06 190);
   /* Secondary: keep cyan as technical accent */
@@ -340,7 +340,6 @@ a:focus-visible, button:focus-visible {
   padding: 0;
   z-index: 102;
   -webkit-tap-highlight-color: transparent;
-  outline: none;
   color: var(--body-dim);
   touch-action: manipulation;
 }

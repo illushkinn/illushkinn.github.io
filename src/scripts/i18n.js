@@ -44,7 +44,9 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Skip to main content',
     'nav-label': 'Main navigation',
-    'lang-announce': 'Language changed to English'
+    'lang-announce': 'Language changed to English',
+    'hamburger-label': 'Toggle navigation',
+    'mobile-menu-label': 'Navigation menu'
   },
   es: {
     'nav-work': 'Trabajos',
@@ -87,7 +89,9 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Saltar al contenido principal',
     'nav-label': 'Navegaci\u00F3n principal',
-    'lang-announce': 'Idioma cambiado a Espa\u00F1ol'
+    'lang-announce': 'Idioma cambiado a Espa\u00F1ol',
+    'hamburger-label': 'Abrir men\u00FA de navegaci\u00F3n',
+    'mobile-menu-label': 'Men\u00FA de navegaci\u00F3n'
   },
   ua: {
     'nav-work': 'Роботи',
@@ -130,7 +134,9 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Ілля Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти до основного вмісту',
     'nav-label': 'Головна навігація',
-    'lang-announce': 'Мову змінено на Українську'
+    'lang-announce': 'Мову змінено на Українську',
+    'hamburger-label': 'Відкрити меню навігації',
+    'mobile-menu-label': 'Меню навігації'
   },
   ru: {
     'nav-work': 'Проекты',
@@ -173,7 +179,9 @@ const i18n = {
     'footer-text': '\u00A9 2026 \u00B7 Илья Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти к основному содержанию',
     'nav-label': 'Основная навигация',
-    'lang-announce': 'Язык изменён на Русский'
+    'lang-announce': 'Язык изменён на Русский',
+    'hamburger-label': 'Открыть меню навигации',
+    'mobile-menu-label': 'Меню навигации'
   }
 };
 
@@ -216,7 +224,15 @@ function applyLang(lang) {
 
   // Cycling highlight in hero title
   var hlEl = document.getElementById('hero-highlight');
+  if (hlEl) {
+    hlEl.setAttribute('aria-live', 'polite');
+    hlEl.setAttribute('aria-atomic', 'true');
+  }
   if (hlEl && t['hero-title-highlight']) {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      hlEl.textContent = t['hero-title-highlight'][0];
+      return;
+    }
     if (cyclingInterval) { clearInterval(cyclingInterval); cyclingInterval = null; }
     var phrases = t['hero-title-highlight'];
     cyclingIndex = 0;
@@ -254,6 +270,10 @@ function applyLang(lang) {
   document.getElementById('btn-contact-email').textContent = t['btn-contact-email'];
   var waBtn = document.getElementById('btn-contact-whatsapp');
   if (waBtn) waBtn.setAttribute('aria-label', t['btn-contact-whatsapp-label']);
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  if (hamburgerBtn) hamburgerBtn.setAttribute('aria-label', t['hamburger-label']);
+  var mobileMenu = document.getElementById('mobileMenu');
+  if (mobileMenu) mobileMenu.setAttribute('aria-label', t['mobile-menu-label']);
   document.getElementById('footer-text').textContent = t['footer-text'];
   localStorage.setItem('lang', lang);
   currentLang = lang;
