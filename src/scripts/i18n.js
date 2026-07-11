@@ -40,7 +40,8 @@ const i18n = {
     'section-contact-title': 'Got a project? <span class="text-accent">Let\'s build it</span>.',
     'section-contact-desc': 'One conversation can change your approach to digital. Let\'s talk about your project.',
     'btn-contact-email': 'Email me',
-    'btn-contact-whatsapp-label': 'Contact via WhatsApp (opens in new tab)',
+    'whatsapp-msg': 'Hey Illya! I saw your site and I\'d love to talk about a project.',
+    'whatsapp-label': 'Contact via WhatsApp (opens in new tab)',
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Skip to main content',
     'nav-label': 'Main navigation',
@@ -85,7 +86,8 @@ const i18n = {
     'section-contact-title': '\u00BFUn proyecto? <span class="text-accent">Construy\u00E1moslo</span>.',
     'section-contact-desc': 'Una conversaci\u00F3n puede cambiar tu enfoque digital. Hablemos de tu proyecto.',
     'btn-contact-email': 'Escríbeme',
-    'btn-contact-whatsapp-label': 'Contactar por WhatsApp (se abre en nueva pestaña)',
+    'whatsapp-msg': '¡Hola Illya! Vi tu sitio y me gustaría hablar sobre un proyecto.',
+    'whatsapp-label': 'Contactar por WhatsApp (se abre en nueva pestaña)',
     'footer-text': '\u00A9 2026 \u00B7 Illya Grytsyk \u00B7 Mar del Plata, Argentina',
     'skip-link': 'Saltar al contenido principal',
     'nav-label': 'Navegaci\u00F3n principal',
@@ -130,7 +132,8 @@ const i18n = {
     'section-contact-title': 'Маєте проект? <span class="text-accent">Давайте побудуємо</span>.',
     'section-contact-desc': 'Одна розмова може змінити ваш підхід до цифрового. Розкажіть про свій проект.',
     'btn-contact-email': 'Напишіть мені',
-    'btn-contact-whatsapp-label': 'Зв\'язатися через WhatsApp (відкривається в новій вкладці)',
+    'whatsapp-msg': 'Привіт, Ілля! Я бачив ваш сайт і хотів би поговорити про проєкт.',
+    'whatsapp-label': 'Зв\'язатися через WhatsApp (відкривається в новій вкладці)',
     'footer-text': '\u00A9 2026 \u00B7 Ілля Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти до основного вмісту',
     'nav-label': 'Головна навігація',
@@ -175,7 +178,8 @@ const i18n = {
     'section-contact-title': 'Есть проект? <span class="text-accent">Давайте создадим</span>.',
     'section-contact-desc': 'Один разговор может изменить ваш подход к цифровому. Расскажите о своем проекте.',
     'btn-contact-email': 'Напишите мне',
-    'btn-contact-whatsapp-label': 'Связаться через WhatsApp (открывается в новой вкладке)',
+    'whatsapp-msg': 'Привет, Илья! Я видел ваш сайт и хотел бы поговорить о проекте.',
+    'whatsapp-label': 'Связаться через WhatsApp (открывается в новой вкладке)',
     'footer-text': '\u00A9 2026 \u00B7 Илья Грицик \u00B7 Мар-дель-Плата, Аргентина',
     'skip-link': 'Перейти к основному содержанию',
     'nav-label': 'Основная навигация',
@@ -269,7 +273,15 @@ function applyLang(lang) {
   document.getElementById('section-contact-desc').textContent = t['section-contact-desc'];
   document.getElementById('btn-contact-email').textContent = t['btn-contact-email'];
   var waBtn = document.getElementById('btn-contact-whatsapp');
-  if (waBtn) waBtn.setAttribute('aria-label', t['btn-contact-whatsapp-label']);
+  if (waBtn) {
+    waBtn.setAttribute('aria-label', t['whatsapp-label']);
+    waBtn.href = 'https://wa.me/5491124063009?text=' + encodeURIComponent(t['whatsapp-msg']);
+  }
+  var waFloat = document.getElementById('whatsappFloat');
+  if (waFloat) {
+    waFloat.setAttribute('aria-label', t['whatsapp-label']);
+    waFloat.href = 'https://wa.me/5491124063009?text=' + encodeURIComponent(t['whatsapp-msg']);
+  }
   var hamburgerBtn = document.getElementById('hamburgerBtn');
   if (hamburgerBtn) hamburgerBtn.setAttribute('aria-label', t['hamburger-label']);
   var mobileMenu = document.getElementById('mobileMenu');
