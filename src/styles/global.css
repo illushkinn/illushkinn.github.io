@@ -232,7 +232,7 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 3.5rem;
 }
 .hero-content {
   display: flex;
@@ -523,11 +523,11 @@ a:focus-visible, button:focus-visible {
   .nav-links { display: none; }
   /* Mobile menu overlay replaces inline nav */
   .hero {
-    padding-top: 3.5rem;
+    padding-top: 2rem;
     min-height: 100dvh;
   }
   .hero-content {
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
   .hero-tags {
     gap: 0.5rem;
@@ -552,7 +552,7 @@ a:focus-visible, button:focus-visible {
   }
   .hero-actions {
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   .hero-actions .btn {
     font-size: 1.25rem;
