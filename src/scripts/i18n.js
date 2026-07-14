@@ -25,7 +25,7 @@ const i18n = {
     'card-2-title': 'Digital Accessibility',
     'card-2-desc': 'Full-spectrum accessibility. Audits, remediation, WCAG 2.2 AA compliance.',
     'card-3-title': 'Education',
-    'card-3-desc': 'Smart automation for your processes. Accessible EdTech for your schools.',
+    'card-3-desc': 'Smart automation for your processes. Accessible EdTech for schools and courses.',
     'section-approach-label': 'How We Build',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, UX-centered.',
     'card-a1-title': 'Blueprint Before Build',
@@ -36,7 +36,7 @@ const i18n = {
     'card-a3-desc': 'Adapted for every audience. Content that connects naturally in each language and culture.',
     'section-contact-label': 'Let\'s Talk',
     'section-contact-title': 'Got a project? <span class="text-accent">Let\'s build it</span>.',
-    'section-contact-desc': 'One conversation can change your approach to digital. Let\'s talk about your project.',
+    'section-contact-desc': 'One conversation can change your approach to digital.<br><strong>Let\'s talk about your project.</strong>',
     'btn-contact-email': 'Email us',
     'whatsapp-msg': 'Hey team! We saw your site and we\'d love to talk about a project.',
     'whatsapp-label': 'Contact via WhatsApp (opens in new tab)',
@@ -69,7 +69,7 @@ const i18n = {
     'card-2-title': 'Accesibilidad Digital',
     'card-2-desc': 'Accesibilidad completa. Auditorías, remediación, cumplimiento WCAG 2.2 AA.',
     'card-3-title': 'Educación',
-    'card-3-desc': 'Automatización para tus procesos. EdTech accesible para tus escuelas.',
+    'card-3-desc': 'Automatización para tus procesos. EdTech accesible para escuelas y cursos.',
     'section-approach-label': 'Cómo Construimos',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, centrado en UX.',
     'card-a1-title': 'Planificar antes de Construir',
@@ -80,7 +80,7 @@ const i18n = {
     'card-a3-desc': 'Adaptado para cada audiencia. Contenido que conecta naturalmente en cada idioma y cultura.',
     'section-contact-label': 'Hablemos',
     'section-contact-title': '\u00BFUn proyecto? <span class="text-accent">Construy\u00E1moslo</span>.',
-    'section-contact-desc': 'Una conversaci\u00F3n puede cambiar tu enfoque digital. Hablemos de tu proyecto.',
+    'section-contact-desc': 'Una conversaci\u00F3n puede cambiar tu enfoque digital.<br><strong>Hablemos de tu proyecto.</strong>',
     'btn-contact-email': 'Escríbenos',
     'whatsapp-msg': '¡Hola! Vimos tu sitio y nos gustaría hablar sobre un proyecto.',
     'whatsapp-label': 'Contactar por WhatsApp (se abre en nueva pestaña)',
@@ -113,7 +113,7 @@ const i18n = {
     'card-2-title': 'Цифрова доступність',
     'card-2-desc': 'Повний спектр доступності. Аудити, виправлення, відповідність WCAG 2.2 AA.',
     'card-3-title': 'Освіта',
-    'card-3-desc': 'Автоматизація для ваших процесів. Доступна EdTech для ваших шкіл.',
+    'card-3-desc': 'Автоматизація для ваших процесів. Доступна EdTech для шкіл і курсів.',
     'section-approach-label': 'Як ми будуємо',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, орієнтовано на UX.',
     'card-a1-title': 'Спочатку План',
@@ -124,7 +124,7 @@ const i18n = {
     'card-a3-desc': 'Адаптовано для кожної аудиторії. Контент, який резонує в кожній мові та культурі.',
     'section-contact-label': 'Поговорімо',
     'section-contact-title': 'Маєте проект? <span class="text-accent">Давайте побудуємо</span>.',
-    'section-contact-desc': 'Одна розмова може змінити ваш підхід до цифрового. Розкажіть про свій проект.',
+    'section-contact-desc': 'Одна розмова може змінити ваш підхід до цифрового.<br><strong>Розкажіть про свій проект.</strong>',
     'btn-contact-email': 'Напишіть нам',
     'whatsapp-msg': 'Привіт! Ми бачили ваш сайт і хотіли б поговорити про проєкт.',
     'whatsapp-label': 'Зв\'язатися через WhatsApp (відкривається в новій вкладці)',
@@ -157,7 +157,7 @@ const i18n = {
     'card-2-title': 'Цифровая доступность',
     'card-2-desc': 'Полный спектр доступности. Аудиты, исправления, соответствие WCAG 2.2 AA.',
     'card-3-title': 'Образование',
-    'card-3-desc': 'Автоматизация для ваших процессов. Доступная EdTech для ваших школ.',
+    'card-3-desc': 'Автоматизация для ваших процессов. Доступная EdTech для школ и курсов.',
     'section-approach-label': 'Как мы строим',
     'section-approach-title': '<span class="text-accent">Spec-first</span>, ориентировано на UX.',
     'card-a1-title': 'Сначала План',
@@ -168,7 +168,7 @@ const i18n = {
     'card-a3-desc': 'Адаптировано для каждой аудитории. Контент, который резонирует на каждом языке и в каждой культуре.',
     'section-contact-label': 'Давайте поговорим',
     'section-contact-title': 'Есть проект? <span class="text-accent">Давайте создадим</span>.',
-    'section-contact-desc': 'Один разговор может изменить ваш подход к цифровому. Расскажите о своем проекте.',
+    'section-contact-desc': 'Один разговор может изменить ваш подход к цифровому.<br><strong>Расскажите о своем проекте.</strong>',
     'btn-contact-email': 'Напишите нам',
     'whatsapp-msg': 'Привет! Мы видели ваш сайт и хотели бы поговорить о проекте.',
     'whatsapp-label': 'Связаться через WhatsApp (открывается в новой вкладке)',
@@ -263,7 +263,7 @@ function applyLang(lang) {
   setDesc('card-a3-desc', t['card-a3-desc']);
   document.getElementById('section-contact-label').textContent = t['section-contact-label'];
   document.getElementById('section-contact-title').innerHTML = t['section-contact-title'];
-  document.getElementById('section-contact-desc').textContent = t['section-contact-desc'];
+  document.getElementById('section-contact-desc').innerHTML = t['section-contact-desc'];
   document.getElementById('btn-contact-email').textContent = t['btn-contact-email'];
   var waBtn = document.getElementById('btn-contact-whatsapp');
   if (waBtn) {
