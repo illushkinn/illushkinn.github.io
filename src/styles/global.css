@@ -286,15 +286,24 @@ p { color: var(--body); line-height: 1.65; text-wrap: pretty; }
 }
 
 /* ========================================
-   🔬 MOLECULES — Grid
+   🔬 MOLECULES — Bento Grid
    ======================================== */
-.grid-2 {
+.bento-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 @media (min-width: 640px) {
-  .grid-2 { grid-template-columns: 1fr 1fr; }
+  .bento-grid { grid-template-columns: 1fr 1fr; }
+}
+.bento-wide {
+  grid-column: 1 / -1;
+}
+.card-desc {
+  color: var(--body-dim);
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
 }
 
 /* ========================================
